@@ -1,0 +1,21 @@
+Scraping Verification Results (DEL to BOM, T+15, Economy, 28/09/2026)
+======================================================================
+
+MakeMyTrip - Extracted 0 flights.
+
+Goibibo - Extracted 0 flights.
+
+Yatra - Extracted 5 flights.
+  {'carrier': 'SG', 'airline_name': 'SpiceJet', 'flight_number': '162', 'departure': '2026-09-28 19:55', 'arrival': '2026-09-28 22:40', 'cabin': 'Economy', 'base_fare': 20000, 'taxes': 2301, 'total_fare': 22301}
+  {'carrier': 'AI', 'airline_name': 'Air India', 'flight_number': '2963', 'departure': '2026-09-28 09:00', 'arrival': '2026-09-28 11:15', 'cabin': 'Economy', 'base_fare': 5343, 'taxes': 1500, 'total_fare': 6843}
+
+Cleartrip - Extracted 236 flights.
+  {'carrier': 'QP', 'airline_name': 'QP', 'base_fare': 0, 'taxes': 0, 'total_fare': 6500, 'cabin': 'Economy'}
+  {'carrier': 'IX', 'airline_name': 'IX', 'base_fare': 0, 'taxes': 0, 'total_fare': 6529, 'cabin': 'Economy'}
+
+EaseMyTrip - Extracted 152 flights.
+  {'carrier': 'IndiGo', 'airline_name': 'IndiGo', 'base_fare': 4078, 'taxes': 2364, 'total_fare': 6442, 'cabin': 'Economy'}
+  {'carrier': 'Akasa Air', 'airline_name': 'Akasa Air', 'base_fare': 5392, 'taxes': 1108, 'total_fare': 6500, 'cabin': 'Economy'}
+
+Ixigo - Extracted 0 flights.
+

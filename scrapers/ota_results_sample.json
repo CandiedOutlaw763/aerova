@@ -1,0 +1,167 @@
+{
+    "MMT": [
+        {
+            "origin": "DEL",
+            "destination": "BOM",
+            "carrier": "SpiceJet",
+            "advance_window": "T+15",
+            "fare_class": "Economy",
+            "base_fare": 4979,
+            "taxes": 1549,
+            "total_fare": 6528
+        },
+        {
+            "origin": "DEL",
+            "destination": "BOM",
+            "carrier": "SpiceJet",
+            "advance_window": "T+15",
+            "fare_class": "Economy",
+            "base_fare": 4979,
+            "taxes": 1549,
+            "total_fare": 6528
+        },
+        {
+            "origin": "DEL",
+            "destination": "BOM",
+            "carrier": "SpiceJet",
+            "advance_window": "T+15",
+            "fare_class": "Economy",
+            "base_fare": 4979,
+            "taxes": 1549,
+            "total_fare": 6528
+        }
+    ],
+    "Cleartrip": [
+        {
+            "carrier": "SG",
+            "airline_name": "SG",
+            "base_fare": 0,
+            "taxes": 0,
+            "total_fare": 6528,
+            "cabin": "Economy"
+        },
+        {
+            "carrier": "SG",
+            "airline_name": "SG",
+            "base_fare": 0,
+            "taxes": 0,
+            "total_fare": 6528,
+            "cabin": "Economy"
+        },
+        {
+            "carrier": "SG",
+            "airline_name": "SG",
+            "base_fare": 0,
+            "taxes": 0,
+            "total_fare": 6528,
+            "cabin": "Economy"
+        }
+    ],
+    "EaseMyTrip": [
+        {
+            "carrier": "51",
+            "airline_name": "51",
+            "base_fare": 4979,
+            "taxes": 1549,
+            "total_fare": 6528,
+            "cabin": "Economy"
+        },
+        {
+            "carrier": "47",
+            "airline_name": "47",
+            "base_fare": 4979,
+            "taxes": 1549,
+            "total_fare": 6528,
+            "cabin": "Economy"
+        },
+        {
+            "carrier": "60",
+            "airline_name": "60",
+            "base_fare": 4979,
+            "taxes": 1549,
+            "total_fare": 6528,
+            "cabin": "Economy"
+        }
+    ],
+    "Goibibo": [
+        {
+            "origin": "DEL",
+            "destination": "BOM",
+            "carrier": "SpiceJet",
+            "advance_window": "T+15",
+            "fare_class": "Economy",
+            "base_fare": 4979,
+            "taxes": 1549,
+            "total_fare": 6173
+        },
+        {
+            "origin": "DEL",
+            "destination": "BOM",
+            "carrier": "SpiceJet",
+            "advance_window": "T+15",
+            "fare_class": "Economy",
+            "base_fare": 4979,
+            "taxes": 1549,
+            "total_fare": 6173
+        },
+        {
+            "origin": "DEL",
+            "destination": "BOM",
+            "carrier": "SpiceJet",
+            "advance_window": "T+15",
+            "fare_class": "Economy",
+            "base_fare": 4979,
+            "taxes": 1549,
+            "total_fare": 6173
+        }
+    ],
+    "Ixigo": [
+        {
+            "carrier": "Air India Express",
+            "airline_name": "Air-India Express",
+            "base_fare": 5549,
+            "taxes": 980,
+            "total_fare": 6529,
+            "cabin": "Economy"
+        },
+        {
+            "carrier": "Air India Express",
+            "airline_name": "Air-India Express",
+            "base_fare": 5549,
+            "taxes": 980,
+            "total_fare": 6529,
+            "cabin": "Economy"
+        },
+        {
+            "carrier": "Air India Express",
+            "airline_name": "Air-India Express",
+            "base_fare": 5549,
+            "taxes": 980,
+            "total_fare": 6529,
+            "cabin": "Economy"
+        }
+    ],
+    "Yatra": [
+        {
+            "carrier": "IX",
+            "airline_name": "Air India Express",
+            "flight_number": "IX-1235",
+            "total_fare": 6490,
+            "cabin": "Economy"
+        },
+        {
+            "carrier": "IX",
+            "airline_name": "Air India Express",
+            "flight_number": "IX-1235",
+            "total_fare": 6490,
+            "cabin": "Economy"
+        },
+        {
+            "carrier": "IX",
+            "airline_name": "Air India Express",
+            "flight_number": "IX-1080",
+            "total_fare": 6491,
+            "cabin": "Economy"
+        }
+    ]
+}

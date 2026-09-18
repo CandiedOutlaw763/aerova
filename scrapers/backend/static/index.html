@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEROVA: Airfare Intelligence & Price Index</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+    
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <h1 class="logo">AERO<span class="highlight">VA</span></h1>
+            <p class="subtitle">Airfare Intelligence & Price Index</p>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <!-- KPI Section -->
+        <section class="kpi-grid">
+            <div class="glass-card kpi-card">
+                <div class="kpi-header">National Daily APIx</div>
+                <div class="kpi-value" id="val-apix">--</div>
+                <div class="kpi-subtext">Official MoSPI: <span id="val-mospi">--</span></div>
+            </div>
+            
+            <div class="glass-card kpi-card">
+                <div class="kpi-header">APIx Variance</div>
+                <div class="kpi-value" id="val-apix-var">--%</div>
+                <div class="kpi-subtext">vs Base Benchmark</div>
+            </div>
+            
+            <div class="glass-card kpi-card">
+                <div class="kpi-header">Avg Fare Variance</div>
+                <div class="kpi-value highlight" id="val-fare-var">--%</div>
+                <div class="kpi-subtext">vs DGCA Official Monthly</div>
+            </div>
+            
+            <div class="glass-card kpi-card">
+                <div class="kpi-header">Routes Validated</div>
+                <div class="kpi-value" id="val-routes">-- / 55</div>
+                <div class="kpi-subtext">Dynamic Scraped Traffic</div>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="charts-section">
+            <div class="glass-card chart-container">
+                <h2 class="chart-title">National APIx Timeline</h2>
+                <div id="chart-timeline" class="plot-area"></div>
+            </div>
+        </section>
+        
+        <section class="charts-section split-section">
+            <div class="glass-card chart-container">
+                <h2 class="chart-title">Sector-wise Fare Variance Heatmap</h2>
+                <div id="chart-heatmap" class="plot-area"></div>
+            </div>
+            
+            <div class="glass-card chart-container elasticity-container">
+                <div class="flex-header">
+                    <h2 class="chart-title">Lead-Time Elasticity Curve</h2>
+                    <select id="route-select" class="glass-select">
+                        <option value="DELHI-MUMBAI">DELHI-MUMBAI</option>
+                    </select>
+                </div>
+                <div id="chart-elasticity" class="plot-area"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

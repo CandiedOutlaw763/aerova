@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "scrapers/backend/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "scrapers/backend/main.py"
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/scrapers/backend/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "scrapers/backend/main.py"
+    }
+  ]
+}

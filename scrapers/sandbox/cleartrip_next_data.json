@@ -1,0 +1,737 @@
+{
+  "_sentryTraceData": "8767c8bb14134706f7fb6ac93b3717b1-93ea2469bf98789b-1",
+  "_sentryBaggage": "sentry-environment=production,sentry-release=BN5779,sentry-public_key=38a8785b30295eec5bb15535a6fc01f8,sentry-trace_id=8767c8bb14134706f7fb6ac93b3717b1,sentry-org_id=4510040130650112,sentry-transaction=getServerSideProps%20%2Fflights%2Fresults,sentry-sampled=true",
+  "isSignedIn": false,
+  "srpCouponList": [
+    {
+      "DESC1": "Get up to \u20b9 1,500 off (AXISEMI)",
+      "MERCH_CODE": "AXISCC",
+      "MERCH_DESC": "Flat 12% off",
+      "MERCH_SUBDESC": "with Axis Credit Cards",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/Axis.svg",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/flights-axis-september-p2/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 08 Sep, 23:59 hrs",
+        "Maximum discount \u20b9 1,500",
+        "Minimum booking amount \u20b9 5,000"
+      ],
+      "TYPE": "PBO",
+      "CODE": "AXISCC",
+      "CODE1": "AXISCC",
+      "ITINDESC1": "Flat 12% off",
+      "ITIN_SUBDESC": "Applicable on Axis Credit Cards",
+      "LINK1": "https://www.cleartrip.com/all-offers/flights-axis-september-p2/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/Axis.svg",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 08 Sep, 23:59 hrs",
+        "Maximum discount \u20b9 1,500",
+        "Minimum booking amount \u20b9 5,000"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    },
+    {
+      "DESC1": "Get up to \u20b9 1,500 off (AXISEMI)",
+      "MERCH_CODE": "YESCC",
+      "MERCH_DESC": "Flat 12% off",
+      "MERCH_SUBDESC": "with Yes Bank Credit Cards",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/Yes Bank.svg",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/flights-yesbank-september/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 15 Sep, 23:59 hrs",
+        "Maximum discount \u20b9 1,500",
+        "Minimum booking amount \u20b9 5,000"
+      ],
+      "TYPE": "PBO",
+      "CODE": "YESCC",
+      "CODE1": "YESCC",
+      "ITINDESC1": "Flat 12% off",
+      "ITIN_SUBDESC": "Applicable on Yes Bank Credit Cards",
+      "LINK1": "https://www.cleartrip.com/all-offers/flights-yesbank-september/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/Yes Bank.svg",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 15 Sep, 23:59 hrs",
+        "Maximum discount \u20b9 1,500",
+        "Minimum booking amount \u20b9 5,000"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    },
+    {
+      "DESC1": "Get up to \u20b9 1,500 off (AXISEMI)",
+      "MERCH_CODE": "INDUSCC",
+      "MERCH_DESC": "Flat 12% off",
+      "MERCH_SUBDESC": "with IndusInd Credit Cards",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/IndusindBull.png",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/flights-indusind-bank-september/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 15 Sep, 23:59 hrs",
+        "Maximum discount \u20b9 1,500",
+        "Minimum booking amount \u20b9 5,000"
+      ],
+      "TYPE": "PBO",
+      "CODE": "INDUSCC",
+      "CODE1": "INDUSCC",
+      "ITINDESC1": "Flat 12% off",
+      "ITIN_SUBDESC": "Applicable on IndusInd Credit Cards",
+      "LINK1": "https://www.cleartrip.com/all-offers/flights-indusind-bank-september/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/IndusindBull.png",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 15 Sep, 23:59 hrs",
+        "Maximum discount \u20b9 1,500",
+        "Minimum booking amount \u20b9 5,000"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    },
+    {
+      "DESC1": "Get up to \u20b9 5,000 off (CTMSDUPI)",
+      "MERCH_CODE": "PNBCC",
+      "MERCH_DESC": "Flat 12% off",
+      "MERCH_SUBDESC": "on PNB Credit Cards",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/PNB.svg",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/pnb-credit-cards-flights-offer/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 30 Sep, 23:59 hrs",
+        "Maximum discount \u20b9 1,700",
+        "Minimum booking amount \u20b9 5,000"
+      ],
+      "TYPE": "PBO",
+      "CODE": "PNBCC",
+      "CODE1": "PNBCC",
+      "ITINDESC1": "Flat 12% off",
+      "ITIN_SUBDESC": "Applicable on PNB Credit Cards",
+      "LINK1": "https://www.cleartrip.com/all-offers/pnb-credit-cards-flights-offer/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/PNB.svg",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 30 Sep, 23:59 hrs",
+        "Maximum discount \u20b9 1,700",
+        "Minimum booking amount \u20b9 5,000"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    },
+    {
+      "DESC1": "Get up to \u20b9 1,500 off (AXISEMI)",
+      "MERCH_CODE": "BOBEMI",
+      "MERCH_DESC": "Flat 12% off  + 3 months No Cost EMI",
+      "MERCH_SUBDESC": "on BOBCARD with No Cost EMI option",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/BankofBaroda.svg",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/bobcard-emi-flights-offer/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 30 Sep\\3:59 hrs",
+        "Maximum discount \u20b9 1,600",
+        "Minimum booking amount \u20b9 7,000"
+      ],
+      "TYPE": "PBO",
+      "CODE": "BOBEMI",
+      "CODE1": "BOBEMI",
+      "ITINDESC1": "Flat 12% off  + 3 months No Cost EMI",
+      "ITIN_SUBDESC": "Applicable on BOBCARD with No Cost EMI option",
+      "LINK1": "https://www.cleartrip.com/all-offers/bobcard-emi-flights-offer/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/BankofBaroda.svg",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 30 Sep\\3:59 hrs",
+        "Maximum discount \u20b9 1,600",
+        "Minimum booking amount \u20b9 7,000"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    },
+    {
+      "DESC1": "Flat 8% off + 6 month NCEMI with IDFC First Bank Credit Cards (IDFCEMI)",
+      "MERCH_CODE": "CTFKAXIS",
+      "MERCH_DESC": "Up to 7% off + 5% Cashback",
+      "MERCH_SUBDESC": "with Flipkart Axis Credit Card",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/FK_Axis.svg",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/flipkart-axis-cc-ct-special-offer/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 30 Sep,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b91500 + get 5% cashback"
+      ],
+      "TYPE": "PBO",
+      "CODE": "CTFKAXIS",
+      "CODE1": "CTFKAXIS",
+      "ITINDESC1": "Up to 7% off + 5% Cashback",
+      "ITIN_SUBDESC": "Additional 5% cashback with Flipkart Axis Credit Card",
+      "LINK1": "https://www.cleartrip.com/all-offers/flipkart-axis-cc-ct-special-offer/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/FK_Axis.svg",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 30 Sep,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b91500 + get 5% cashback"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    },
+    {
+      "DESC1": "Get up to \u20b9 5,000 off (CTMSDUPI)",
+      "MERCH_CODE": "CTFKSBIC",
+      "MERCH_DESC": "Up to 7% off + 5% Cashback",
+      "MERCH_SUBDESC": "with Flipkart SBI Credit Card",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/FK_SBI.svg",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/sbicbc-ct-special-offer/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 30 Sep,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b91500 + get 5% cashback"
+      ],
+      "TYPE": "PBO",
+      "CODE": "CTFKSBIC",
+      "CODE1": "CTFKSBIC",
+      "ITINDESC1": "Up to 7% off + 5% Cashback",
+      "ITIN_SUBDESC": "Additional 5% cashback with Flipkart SBI Credit Card",
+      "LINK1": "https://www.cleartrip.com/all-offers/sbicbc-ct-special-offer/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/FK_SBI.svg",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 30 Sep,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b91500 + get 5% cashback"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    },
+    {
+      "DESC1": "Get up to \u20b9 1,500 off (AXISEMI)",
+      "MERCH_CODE": "AXISEMI",
+      "MERCH_DESC": "Flat 12% off",
+      "MERCH_SUBDESC": "on Axis Bank Credit Card EMI",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/Axis.svg",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/flights-axis-september-p2/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 15 Sep, 23:59 hrs",
+        "Maximum discount \u20b9 1,800",
+        "Minimum booking amount \u20b9 5,000"
+      ],
+      "TYPE": "PBO",
+      "CODE": "AXISEMI",
+      "CODE1": "AXISEMI",
+      "ITINDESC1": "Flat 12% off",
+      "ITIN_SUBDESC": "Applicable on AXIS Bank Credit Card EMI",
+      "LINK1": "https://www.cleartrip.com/all-offers/flights-axis-september-p2/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/Axis.svg",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 15 Sep, 23:59 hrs",
+        "Maximum discount \u20b9 1,800",
+        "Minimum booking amount \u20b9 5,000"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    },
+    {
+      "DESC1": "Get up to \u20b9 1,500 off (AXISEMI)",
+      "MERCH_CODE": "INDUSEMI",
+      "MERCH_DESC": "Flat 12% off",
+      "MERCH_SUBDESC": "with IndusInd Credit Cards EMI",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/IndusindBull.png",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/flights-indusind-bank-september/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 15 Sep, 23:59 hrs",
+        "Maximum discount \u20b9 1,800",
+        "Minimum booking amount \u20b9 5,000"
+      ],
+      "TYPE": "PBO",
+      "CODE": "INDUSEMI",
+      "CODE1": "INDUSEMI",
+      "ITINDESC1": "Flat 12% off",
+      "ITIN_SUBDESC": "Applicable on IndusInd Credit Cards EMI",
+      "LINK1": "https://www.cleartrip.com/all-offers/flights-indusind-bank-september/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/IndusindBull.png",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 15 Sep, 23:59 hrs",
+        "Maximum discount \u20b9 1,800",
+        "Minimum booking amount \u20b9 5,000"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    },
+    {
+      "DESC1": "Get up to \u20b9 5,000 off (CTMSDUPI)",
+      "MERCH_CODE": "CTSWHDFC",
+      "MERCH_DESC": "Up to 6% off + 5% Cashback",
+      "MERCH_SUBDESC": "with Swiggy HDFC Credit Card",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/Swiggy2.svg",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/swiggy-hdfc-ct-special-offer/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 30 Sep,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b91500 + 5% cashback"
+      ],
+      "TYPE": "PBO",
+      "CODE": "CTSWHDFC",
+      "CODE1": "CTSWHDFC",
+      "ITINDESC1": "Up to 6% off + 5% Cashback",
+      "ITIN_SUBDESC": "Additional 5% cashback with Swiggy HDFC Credit Card",
+      "LINK1": "https://www.cleartrip.com/all-offers/swiggy-hdfc-ct-special-offer/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/Swiggy2.svg",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 30 Sep,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b91500 + 5% cashback"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    },
+    {
+      "DESC1": "Flat 7% off (CTHDFCREGALIA)",
+      "MERCH_CODE": "HDFCREGALIACT",
+      "MERCH_DESC": "Flat 7% off",
+      "MERCH_SUBDESC": "with HDFC Bank Regalia Credit Cards",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/HDFC.svg",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/flights-hdfc-regalia-millenia/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 12 Nov,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b9 1,500"
+      ],
+      "TYPE": "PBO",
+      "CODE": "HDFCREGALIACT",
+      "CODE1": "HDFCREGALIACT",
+      "ITINDESC1": "Flat 7% off",
+      "ITIN_SUBDESC": "Applicable on HDFC Regalia Credit Card",
+      "LINK1": "https://www.cleartrip.com/all-offers/flights-hdfc-regalia-millenia/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/HDFC.svg",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 12 Nov,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b9 1,500"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    },
+    {
+      "DESC1": "Flat 7% off (CTAXISMYZONE)",
+      "MERCH_CODE": "CTAXISMYZONE",
+      "MERCH_DESC": "Flat 7% off",
+      "MERCH_SUBDESC": "with Axis Bank MyZone Credit Cards",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/MyZone.svg",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/flights-axis-bank-myzone-neo-cards/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 12 Nov,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b9 2,000"
+      ],
+      "TYPE": "PBO",
+      "CODE": "CTAXISMYZONE",
+      "CODE1": "CTAXISMYZONE",
+      "ITINDESC1": "Flat 7% off",
+      "ITIN_SUBDESC": "Applicable on Axis Bank MyZone Credit Card",
+      "LINK1": "https://www.cleartrip.com/all-offers/flights-axis-bank-myzone-neo-cards/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/MyZone.svg",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 12 Nov,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b9 2,000"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    },
+    {
+      "DESC1": "Flat 7% off (CTHDFCREGALIA)",
+      "MERCH_CODE": "HDFCMILLENIACT",
+      "MERCH_DESC": "Flat 7% off",
+      "MERCH_SUBDESC": "with HDFC Bank Millenia Credit Cards",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/HDFC.svg",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/flights-hdfc-regalia-millenia/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 12 Nov,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b9 1,500"
+      ],
+      "TYPE": "PBO",
+      "CODE": "HDFCMILLENIACT",
+      "CODE1": "HDFCMILLENIACT",
+      "ITINDESC1": "Flat 7% off",
+      "ITIN_SUBDESC": "Applicable on HDFC Millenia Credit Card",
+      "LINK1": "https://www.cleartrip.com/all-offers/flights-hdfc-regalia-millenia/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/HDFC.svg",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 12 Nov,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b9 1,500"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    },
+    {
+      "DESC1": "Flat 7% off (CTAXISNEO)",
+      "MERCH_CODE": "CTAXISNEO",
+      "MERCH_DESC": "Flat 7% off",
+      "MERCH_SUBDESC": "with Axis Bank Neo Credit Cards",
+      "MERCH_ICON": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/Neo.svg",
+      "MERCH_LINK": "https://www.cleartrip.com/all-offers/flights-axis-bank-myzone-neo-cards/",
+      "MERCH_TNC": [
+        "Offer valid for booking made till 12 Nov,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b9 2,000"
+      ],
+      "TYPE": "PBO",
+      "CODE": "CTAXISNEO",
+      "CODE1": "CTAXISNEO",
+      "ITINDESC1": "Flat 7% off",
+      "ITIN_SUBDESC": "Applicable on Axis Bank Neo Credit Card",
+      "LINK1": "https://www.cleartrip.com/all-offers/flights-axis-bank-myzone-neo-cards/",
+      "ICON1": "https://static-assets-ct.flixcart.com/ct/assets/offermgmt/images/bank-logos/svg/Neo.svg",
+      "ITIN_TNC": [
+        "Offer valid for booking made till 12 Nov,23:59 hrs",
+        "No Minimum booking amount",
+        "Max. instant discount up to \u20b9 2,000"
+      ],
+      "ISACTIVE": "Y",
+      "HEADING": "Mobikwik Exclusive",
+      "TITLE": null,
+      "ITINDESC2": null,
+      "CODE2": null,
+      "ICON2": null
+    }
+  ],
+  "isFF": false,
+  "isCfw": false,
+  "initialState": {
+    "results": {
+      "data": {},
+      "isLoading": true,
+      "isInfiniteScrollLoading": false,
+      "isSlotUpdationLoading": false
+    },
+    "topFilters": {
+      "data": {}
+    },
+    "modals": {
+      "data": []
+    },
+    "sidesheets": {
+      "data": []
+    },
+    "dropdown": {
+      "isOpen": false,
+      "dropdownId": "",
+      "isSubmitable": false,
+      "isFooterCTALoading": false,
+      "overlayConfig": {
+        "showOverlay": false,
+        "topOffset": 0
+      }
+    },
+    "modifySearch": {
+      "data": {
+        "location": {
+          "text": "",
+          "isflightSearch": false,
+          "placeDetails": null
+        },
+        "searchedDate": {
+          "checkInDate": null,
+          "checkOutDate": null,
+          "checkInDateText": "",
+          "checkOutDateText": ""
+        },
+        "paxDetails": {
+          "text": "",
+          "roomDetails": [
+            {
+              "adults": {
+                "count": 1,
+                "metadata": []
+              },
+              "children": {
+                "count": 0,
+                "metadata": []
+              }
+            }
+          ]
+        }
+      },
+      "modifyComponentState": {
+        "show": false,
+        "hasError": false
+      }
+    },
+    "abConfig": {
+      "data": {},
+      "loading": false
+    },
+    "wallet": {
+      "data": {},
+      "hasLoader": false,
+      "hasError": false
+    },
+    "navtabsState": {},
+    "details": {
+      "data": {},
+      "isLoading": true
+    },
+    "lineageId": {
+      "id": ""
+    },
+    "merchResults": {
+      "data": {},
+      "isLoading": true,
+      "isFiltersLoading": false,
+      "errorCode": 0
+    },
+    "itinerary": {
+      "loading": false,
+      "error": {},
+      "errorMsg": {
+        "msg": ""
+      },
+      "itineraryData": {
+        "USER_DIALOGUE": {
+          "dialogues": [
+            {
+              "actions": [],
+              "dialogueType": "",
+              "message": {
+                "type": "",
+                "title": "",
+                "subTitle": ""
+              }
+            }
+          ]
+        },
+        "ANCILLARY": {
+          "userSelectedAncillaries": {}
+        },
+        "INSURANCES": {},
+        "USER": {},
+        "COUPON": {
+          "applicableCouponDetails": {
+            "applicableCouponList": []
+          },
+          "appliedCouponDetails": {
+            "couponData": [
+              {
+                "amount": 0,
+                "couponCode": "",
+                "message": ""
+              }
+            ],
+            "userDialogueRequired": false
+          }
+        },
+        "FARE_BREAKUP": {
+          "pricingElements": [],
+          "finalPricing": {}
+        },
+        "VOUCHERS": {},
+        "FLIGHT": {},
+        "FARE_CARDS": {},
+        "DEAL": {},
+        "SEARCH_DETAILS": {}
+      },
+      "loadingState": {
+        "COMPONENTS": true,
+        "ANCILLARY": true,
+        "INSURANCES": true,
+        "COUPON": false,
+        "COUPON_LIST": true,
+        "UPDATING": false,
+        "CFWINSURANCES": true,
+        "FARE_BENEFITS": false
+      },
+      "apiFetchStatus": {
+        "ANCILLARY": false
+      },
+      "fareFamilyState": {
+        "showFareList": false
+      },
+      "appPushData": {
+        "couponBannerCount": 0
+      },
+      "itineraryId": ""
+    },
+    "dialogs": {
+      "data": []
+    },
+    "forms": {},
+    "toasts": {
+      "data": []
+    },
+    "srpSeachData": {
+      "searchData": {
+        "cards": {
+          "J1": []
+        },
+        "sortData": {},
+        "filterData": {},
+        "metaData": {
+          "airlineDetail": {},
+          "airportDetail": {}
+        },
+        "searchIntent": {},
+        "subTravelOptions": {},
+        "fares": {},
+        "dataId": "",
+        "travelOptionIdsToFareIdsMap": {},
+        "searchId": ""
+      },
+      "isLoading": true,
+      "srpError": "",
+      "responseStatusCode": "",
+      "isServicesLoading": true,
+      "servicesData": {
+        "benefits": {},
+        "baggageAllowances": {},
+        "cardIdToBenefitsMap": {}
+      },
+      "commonServicesData": {},
+      "couponData": {},
+      "baggageData": {},
+      "wowFares": {},
+      "wowSorting": {},
+      "isDynamicContentLoading": true,
+      "progressiveLoadingIndices": [],
+      "highRpsTravelOptionIds": [],
+      "wowLoadingFareIds": [],
+      "selectedFilters": {},
+      "interstitialFetchedKeys": {},
+      "searchFareRefs": {}
+    },
+    "emiEligibility": {
+      "emiCalloutMsg": {
+        "loading": false,
+        "loaded": false,
+        "data": {}
+      },
+      "emiData": {
+        "error": false,
+        "isLoading": false
+      },
+      "rtEmiData": {
+        "error": false,
+        "isLoading": false,
+        "data": {}
+      }
+    },
+    "emiAffordability": {
+      "emiBanksData": {},
+      "selectedFlightData": {},
+      "emiPopup": {
+        "show": false
+      }
+    },
+    "visaDenial": {
+      "isLoading": false,
+      "isAvailable": false,
+      "error": false,
+      "data": null
+    },
+    "flightStatus": {
+      "searchIntent": null,
+      "cards": [],
+      "filterData": null,
+      "selectedFilters": {
+        "airlines": [],
+        "departureTime": [],
+        "arrivalTime": []
+      },
+      "isLoading": false,
+      "error": "",
+      "activeTab": "departures",
+      "searchType": null
+    },
+    "trackingSearch": {
+      "data": {}
+    },
+    "amendTraveller": {
+      "amendmentsLoading": true,
+      "notEligible": false,
+      "apiFailed": false,
+      "errorMessage": "",
+      "eligibilityFailureCode": "",
+      "userEmail": "",
+      "isFlexiFlyIntlBooking": false,
+      "ineligibleDueToOffer": false,
+      "eligibilityTier": null,
+      "isGdsIntl": false,
+      "isSms": false,
+      "travellerDetails": null,
+      "passengers": [],
+      "journeys": [],
+      "isRoundTripCalendar": false,
+      "searchAPIData": {},
+      "searchResults": {},
+      "amendCaseFlowType": "",
+      "amendCaseReason": "",
+      "caseModalLoading": false,
+      "fulfillmentFlag": false,
+      "fulfillmentCase": {
+        "mobile": "",
+        "email": "",
+        "header": "",
+        "message": ""
+      },
+      "showErrorViewMsg": true
+    },
+    "statsig": {
+      "statsigClientValues": {
+        "bootstrapValues": "{\"feature_gates\":{\"745166714\":{\"name\":\"745166714\",\"rule_id\":\"default\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":false},\"1648254047\":{\"name\":\"1648254047\",\"rule_id\":\"default\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":false},\"837786061\":{\"name\":\"837786061\",\"rule_id\":\"65XPff5iTZxbPvHl9bEGTE\",\"secondary_exposures\":[],\"id_type\":\"stable_id\",\"value\":true},\"1114152311\":{\"name\":\"1114152311\",\"rule_id\":\"default\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":false},\"1897203577\":{\"name\":\"1897203577\",\"rule_id\":\"default\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":false},\"1625988818\":{\"name\":\"1625988818\",\"rule_id\":\"default\",\"secondary_exposures\":[{\"gate\":\"837786061\",\"gateValue\":\"true\",\"ruleID\":\"65XPff5iTZxbPvHl9bEGTE\"}],\"id_type\":\"stableID\",\"value\":false},\"122466127\":{\"name\":\"122466127\",\"rule_id\":\"default\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":false},\"647596224\":{\"name\":\"647596224\",\"rule_id\":\"default\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":false},\"2386699479\":{\"name\":\"2386699479\",\"rule_id\":\"default\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":false}},\"dynamic_configs\":{\"776135658\":{\"name\":\"776135658\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3788420245\":{\"name\":\"3788420245\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"tab_position\":\"hotel_tab_on_left\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1497695193\":{\"name\":\"1497695193\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"userID\",\"value\":{},\"is_device_based\":false,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3436310389\":{\"name\":\"3436310389\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"4124070778\":{\"name\":\"4124070778\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"2239071033\":{\"name\":\"2239071033\",\"rule_id\":\"Kb3Z0qhwI3yOGYhWXpKy2\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"V2\",\"variants\":\"V2\"},\"is_device_based\":true,\"is_in_layer\":true,\"explicit_parameters\":[\"variants\"],\"group_name\":\"mevc_fare_calendar\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"1567654781\":{\"name\":\"1567654781\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"980105279\":{\"name\":\"980105279\",\"rule_id\":\"3sf4FQmbanw4hMy7hpd7RU\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"V2\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"510548583\":{\"name\":\"510548583\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"default_off\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2334871763\":{\"name\":\"2334871763\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"929194325\":{\"name\":\"929194325\",\"rule_id\":\"targetingGate\",\"secondary_exposures\":[{\"gate\":\"122466127\",\"gateValue\":\"false\",\"ruleID\":\"default\"}],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3517603836\":{\"name\":\"3517603836\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"sellingHotels\":\"DetailScreenBottom\"},\"is_device_based\":true,\"group_name\":\"DetailScreenBottom\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3771756718\":{\"name\":\"3771756718\",\"rule_id\":\"6K0WyPVrRC1CxI7fEf8k6J\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"control\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"2490742666\":{\"name\":\"2490742666\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2556420007\":{\"name\":\"2556420007\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"3717234144\":{\"name\":\"3717234144\",\"rule_id\":\"6XBIyLFNggzQ1u8ZoQsK4b\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"enablePN\":\"Fbooking_confirmation_PN\"},\"is_device_based\":true,\"group_name\":\"Fbooking_confirmation_PN\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"3100689629\":{\"name\":\"3100689629\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"409317995\":{\"name\":\"409317995\",\"rule_id\":\"19nfAj4bDV2adyv0Bb3jPH\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"1167727224\":{\"name\":\"1167727224\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"V2\",\"variants\":\"V1\"},\"is_device_based\":true,\"is_in_layer\":true,\"explicit_parameters\":[\"variant\"],\"group_name\":\"Control\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"572824049\":{\"name\":\"572824049\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3814723565\":{\"name\":\"3814723565\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"userID\",\"value\":{},\"is_device_based\":false,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1881110215\":{\"name\":\"1881110215\",\"rule_id\":\"1wY7QND50J2fpMvdFLFOdg\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"test\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"1541024591\":{\"name\":\"1541024591\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3247714609\":{\"name\":\"3247714609\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"userID\",\"value\":{},\"is_device_based\":false,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"189070617\":{\"name\":\"189070617\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3089707584\":{\"name\":\"3089707584\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3966906137\":{\"name\":\"3966906137\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"455546454\":{\"name\":\"455546454\",\"rule_id\":\"AuHS1ItMviLGHrvmTvQ4b2\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"bottomsheet\"},\"is_device_based\":true,\"group_name\":\"BottomSheet\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"3034441304\":{\"name\":\"3034441304\",\"rule_id\":\"5P7skmqlOq3Hqg6OzE6SNT\",\"secondary_exposures\":[],\"id_type\":\"userID\",\"value\":{\"variant\":\"ff_old\"},\"is_device_based\":false,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"2157608835\":{\"name\":\"2157608835\",\"rule_id\":\"4jf8xpzZTYfNHLgFr14pUF\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"control\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"2567951863\":{\"name\":\"2567951863\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"userID\",\"value\":{},\"is_device_based\":false,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2368358357\":{\"name\":\"2368358357\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"v2\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3556498\":{\"name\":\"3556498\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"userID\",\"value\":{},\"is_device_based\":false,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2853202824\":{\"name\":\"2853202824\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2853202908\":{\"name\":\"2853202908\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"Variant\":\"test\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3417797620\":{\"name\":\"3417797620\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2626433657\":{\"name\":\"2626433657\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"2509079225\":{\"name\":\"2509079225\",\"rule_id\":\"ly24th3BBwI46lKQrgTNt\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"a\"},\"is_device_based\":true,\"group_name\":\"currentflow\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"3903923291\":{\"name\":\"3903923291\",\"rule_id\":\"6yUQmvzQ8thOAoz7ihf6od\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"v3\"},\"is_device_based\":true,\"group_name\":\"Test_N8\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"95266617\":{\"name\":\"95266617\",\"rule_id\":\"39fgZEB3axsHG6LiQKenDE\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"v2\"},\"is_device_based\":true,\"group_name\":\"aerobridge\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"2337552953\":{\"name\":\"2337552953\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1895096176\":{\"name\":\"1895096176\",\"rule_id\":\"34brV5EjqCHWNwRx4xB0b4\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"Variant\":\"control\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"2001722639\":{\"name\":\"2001722639\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1114554957\":{\"name\":\"1114554957\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"test\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"522551580\":{\"name\":\"522551580\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"test\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1389555928\":{\"name\":\"1389555928\",\"rule_id\":\"5RjjXA29QXAonhSh8YswV7\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"a\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"701566552\":{\"name\":\"701566552\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3481941278\":{\"name\":\"3481941278\",\"rule_id\":\"inlineTargetingRules\",\"secondary_exposures\":[{\"gate\":\"1114152311\",\"gateValue\":\"false\",\"ruleID\":\"default\"},{\"gate\":\"2386699479\",\"gateValue\":\"false\",\"ruleID\":\"default\"},{\"gate\":\"122466127\",\"gateValue\":\"false\",\"ruleID\":\"default\"}],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"1881110299\":{\"name\":\"1881110299\",\"rule_id\":\"2Vi2GKNgu4mubxYFOuB7rI\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"test\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"1998601741\":{\"name\":\"1998601741\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"rank_model\":\"heuristic\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2656581776\":{\"name\":\"2656581776\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3104525059\":{\"name\":\"3104525059\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"73532355\":{\"name\":\"73532355\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"98974749\":{\"name\":\"98974749\",\"rule_id\":\"eIbYCYQhxgTVsNiurUfly\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"99668434\":{\"name\":\"99668434\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"v2\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"4038354701\":{\"name\":\"4038354701\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"2341555419\":{\"name\":\"2341555419\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"Packages_v2_rollout\":\"test\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"530210780\":{\"name\":\"530210780\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"test2\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"4149633373\":{\"name\":\"4149633373\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"4228935550\":{\"name\":\"4228935550\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2903827583\":{\"name\":\"2903827583\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"v2\"},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1578430580\":{\"name\":\"1578430580\",\"rule_id\":\"4xiUhh10FuV3lmlJg4E3iP\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"v2\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"1778207860\":{\"name\":\"1778207860\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2148493858\":{\"name\":\"2148493858\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2879370165\":{\"name\":\"2879370165\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2131988321\":{\"name\":\"2131988321\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"cys_enabled\":\"yes\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"895435124\":{\"name\":\"895435124\",\"rule_id\":\"65wR4ret0wSGgmahTaxwFf\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"control\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"2765955993\":{\"name\":\"2765955993\",\"rule_id\":\"targetingGate\",\"secondary_exposures\":[{\"gate\":\"1897203577\",\"gateValue\":\"false\",\"ruleID\":\"default\"}],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"99667985\":{\"name\":\"99667985\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"test\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1863894002\":{\"name\":\"1863894002\",\"rule_id\":\"7sHI3yL33qC7ZXQhFpsdTa\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"2627375614\":{\"name\":\"2627375614\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"4133332272\":{\"name\":\"4133332272\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"xsell_ver\":\"p\"},\"is_device_based\":true,\"group_name\":\"lpg_all_new\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1670281426\":{\"name\":\"1670281426\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"userID\",\"value\":{},\"is_device_based\":false,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2989047424\":{\"name\":\"2989047424\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"Fare_Family_Int_Test\"},\"is_device_based\":true,\"group_name\":\"fare family\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1371341174\":{\"name\":\"1371341174\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3348037\":{\"name\":\"3348037\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"V2\",\"variants\":\"V1\"},\"is_device_based\":true,\"is_in_layer\":true,\"explicit_parameters\":[\"variants\"],\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1754401181\":{\"name\":\"1754401181\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"1567659562\":{\"name\":\"1567659562\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"4013548150\":{\"name\":\"4013548150\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1323472748\":{\"name\":\"1323472748\",\"rule_id\":\"20QOLhALhZO7DqIrSxTWxf\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"onboardingVariant\":\"V3\"},\"is_device_based\":true,\"group_name\":\"Carousel and Skip\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"1780931523\":{\"name\":\"1780931523\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bestBenefitLogin\":\"singleLoyaltyBenefit\"},\"is_device_based\":true,\"group_name\":\"singleLoyaltyBenefit\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3854079481\":{\"name\":\"3854079481\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"itin_addon\"},\"is_device_based\":true,\"group_name\":\"Test 2\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2760147632\":{\"name\":\"2760147632\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"597977225\":{\"name\":\"597977225\",\"rule_id\":\"6PUl0S0izQginjkLBYf4VW\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"control\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"3716198664\":{\"name\":\"3716198664\",\"rule_id\":\"4oGfSIKHjpmeLgWOnTs7dT\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"test\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"530215561\":{\"name\":\"530215561\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"test2\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"192331437\":{\"name\":\"192331437\",\"rule_id\":\"7GyLqFb4jVINZqCV1aeW6d\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"fk_flights_fkt_for_work\":\"False\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"3433958252\":{\"name\":\"3433958252\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3417796179\":{\"name\":\"3417796179\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"userID\",\"value\":{},\"is_device_based\":false,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3533008842\":{\"name\":\"3533008842\",\"rule_id\":\"p1gNDraP9XuKVDXXAVIR9\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"control\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"4171759634\":{\"name\":\"4171759634\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2941164695\":{\"name\":\"2941164695\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"V2\"},\"is_device_based\":true,\"group_name\":\"Test 2\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3903923290\":{\"name\":\"3903923290\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"v2\"},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1578783916\":{\"name\":\"1578783916\",\"rule_id\":\"1jO75dOSHCBVo7eIdKQOYi\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"test\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"3816156363\":{\"name\":\"3816156363\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"itin_addon\"},\"is_device_based\":true,\"group_name\":\"Test 2\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"85594701\":{\"name\":\"85594701\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1250372722\":{\"name\":\"1250372722\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3112546020\":{\"name\":\"3112546020\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"test\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"4242380670\":{\"name\":\"4242380670\",\"rule_id\":\"76vtkgQGZyBQSvLQRia4gj\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"3482813672\":{\"name\":\"3482813672\",\"rule_id\":\"5maaBLAozfq73mGMEbmfCU\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"packages_first_rollout\":\"control\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"3047220532\":{\"name\":\"3047220532\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"hpm_hpi_removal\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"838795041\":{\"name\":\"838795041\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"control\"},\"is_device_based\":true,\"group_name\":\"control\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3547622112\":{\"name\":\"3547622112\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"1197983810\":{\"name\":\"1197983810\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"search_v3\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3461162605\":{\"name\":\"3461162605\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2468847074\":{\"name\":\"2468847074\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1492705208\":{\"name\":\"1492705208\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"xsell_ver\":\"x\"},\"is_device_based\":true,\"group_name\":\"f20_all_new\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2410893034\":{\"name\":\"2410893034\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"679595428\":{\"name\":\"679595428\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"v1\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3269049016\":{\"name\":\"3269049016\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"1928290930\":{\"name\":\"1928290930\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"3853830254\":{\"name\":\"3853830254\",\"rule_id\":\"27KVfuAMPLWxeMnyNcy626\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"heuristic_v2\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"4290143164\":{\"name\":\"4290143164\",\"rule_id\":\"4Go3yWdCfDVr6D8B6gSXBb\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"2757856350\":{\"name\":\"2757856350\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1881434300\":{\"name\":\"1881434300\",\"rule_id\":\"targetingGate\",\"secondary_exposures\":[{\"gate\":\"1897203577\",\"gateValue\":\"false\",\"ruleID\":\"default\"}],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"3903482301\":{\"name\":\"3903482301\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2242904525\":{\"name\":\"2242904525\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"701562709\":{\"name\":\"701562709\",\"rule_id\":\"1CfGDL2KqDlBjSWVZ1T2x3\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"Variants\":\"v1\"},\"is_device_based\":true,\"group_name\":\"Control 1\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"1256643240\":{\"name\":\"1256643240\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"LoyaltySparks\":\"newBenefitEngine\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"780389777\":{\"name\":\"780389777\",\"rule_id\":\"5d9Cc23a5KvSuvjNgmGixu\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"2914304172\":{\"name\":\"2914304172\",\"rule_id\":\"2qtbDBoblWIy9y0Pxb6Bm4\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"onboardingVariant\":\"V3\"},\"is_device_based\":true,\"group_name\":\"Carousel and Skip\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"4178840466\":{\"name\":\"4178840466\",\"rule_id\":\"11lmh9RxMsiJiQ7sWvYGEI\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"v1\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"3923353438\":{\"name\":\"3923353438\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2899272757\":{\"name\":\"2899272757\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"v2\"},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2031075573\":{\"name\":\"2031075573\",\"rule_id\":\"5P7UdbUVj73kkD91NYSoYK\",\"secondary_exposures\":[],\"id_type\":\"userID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":false,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"284618335\":{\"name\":\"284618335\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"test1\"},\"is_device_based\":true,\"group_name\":\"test1\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2557542827\":{\"name\":\"2557542827\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"rank_model\":\"heuristic\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3088355368\":{\"name\":\"3088355368\",\"rule_id\":\"61LZzUkBcXJgFTHmLd6WV1\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variants\":\"v3\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"2146605462\":{\"name\":\"2146605462\",\"rule_id\":\"targetingGate\",\"secondary_exposures\":[{\"gate\":\"1648254047\",\"gateValue\":\"false\",\"ruleID\":\"default\"}],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"245831743\":{\"name\":\"245831743\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"4206732506\":{\"name\":\"4206732506\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"userID\",\"value\":{},\"is_device_based\":false,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"547517539\":{\"name\":\"547517539\",\"rule_id\":\"6sJ3ithICo1lGJbxBTyFfr\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"316925068\":{\"name\":\"316925068\",\"rule_id\":\"3Rb2qG6kKHUVzrlkq97HaS\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"heuristic_v2\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"110251487\":{\"name\":\"110251487\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"userID\",\"value\":{},\"is_device_based\":false,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1979295518\":{\"name\":\"1979295518\",\"rule_id\":\"6xqekcLRpEcDJy14CXiLw2\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"1693408506\":{\"name\":\"1693408506\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"Variant\":\"a\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"2158726100\":{\"name\":\"2158726100\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"userID\",\"value\":{},\"is_device_based\":false,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"3508583095\":{\"name\":\"3508583095\",\"rule_id\":\"1LseXoNpxNsE8GM8jGX54S\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"new_experience\"},\"is_device_based\":true,\"group_name\":\"Test 2\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"3750730927\":{\"name\":\"3750730927\",\"rule_id\":\"launchedGroup\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"variant\":\"test\"},\"is_device_based\":true,\"group_name\":\"fare family\",\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"735943061\":{\"name\":\"735943061\",\"rule_id\":\"4IFAtnFW0FaalBy6sXpCWS\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"a\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"2785431747\":{\"name\":\"2785431747\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"1886534439\":{\"name\":\"1886534439\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"2051547070\":{\"name\":\"2051547070\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"625610251\":{\"name\":\"625610251\",\"rule_id\":\"prestart\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":false,\"is_user_in_experiment\":false},\"98984197\":{\"name\":\"98984197\",\"rule_id\":\"7GBfYo4z4mJJGVZY074tJD\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"308537207\":{\"name\":\"308537207\",\"rule_id\":\"layerAssignment\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{},\"is_device_based\":true,\"is_experiment_active\":true,\"is_user_in_experiment\":false},\"2821694360\":{\"name\":\"2821694360\",\"rule_id\":\"4cNYD3K2Cey8rQkgcAl74u\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"Variant\":\"control\"},\"is_device_based\":true,\"group_name\":\"Control\",\"is_experiment_active\":true,\"is_user_in_experiment\":true},\"1519210056\":{\"name\":\"1519210056\",\"rule_id\":\"7gaA3HwXmuJYXdhsoW2wat\",\"secondary_exposures\":[],\"id_type\":\"stableID\",\"value\":{\"bucket\":\"b\"},\"is_device_based\":true,\"group_name\":\"Test\",\"is_experiment_active\":true,\"is_user_in_experiment\":true}},\"layer_configs\":{\"3399936687\":{\"name\":\"3399936687\",\"rule_id\":\"default\",\"secondary_exposures\":[],\"value\":{},\"id_type\":\"stableID\",\"is_device_based\":true,\"explicit_parameters\":[],\"undelegated_secondary_exposures\":[]},\"2383360722\":{\"name\":\"2383360722\",\"rule_id\":\"Kb3Z0qhwI3yOGYhWXpKy2\",\"secondary_exposures\":[],\"value\":{\"variant\":\"V2\",\"variants\":\"V2\"},\"id_type\":\"stableID\",\"is_device_based\":true,\"group_name\":\"mevc_fare_calendar\",\"is_experiment_active\":true,\"is_user_in_experiment\":true,\"allocated_experiment_name\":\"2239071033\",\"explicit_parameters\":[\"variants\"],\"undelegated_secondary_exposures\":[]}},\"time\":1789159254839,\"has_updates\":true,\"hash_used\":\"djb2\",\"user\":{\"customIDs\":{\"stableID\":\"f85d11f5-674b-4121-94ff-0458ea435b43\"},\"statsigEnvironment\":{\"tier\":\"production\"}},\"sdkInfo\":{\"sdkVersion\":\"0.12.1\",\"sessionId\":\"f2003df2-e6bd-4772-bf0d-1c28d3b7b65a\",\"sdkType\":\"statsig-server-core-node\"},\"sdkParams\":{},\"evaluated_keys\":{\"stableID\":\"f85d11f5-674b-4121-94ff-0458ea435b43\"},\"param_stores\":{},\"can_record_session\":true,\"session_recording_rate\":1.0,\"recording_blocked\":false}",
+        "stableID": "f85d11f5-674b-4121-94ff-0458ea435b43",
+        "clientKey": "client-HbSZTY9E8vIuRlkDks95kjZN9MSryi3G05EgWWIhU1O"
+      },
+      "experiments": {
+        "seat_reco_dom": "",
+        "seat_reco_int": "",
+        "new_seat_reco_dom": "",
+        "new_seat_reco_int": "",
+        "checkoutflowenabled": "",
+        "explore_ct_desktop": "",
+        "pe_discovery_v1": "control"
+      }
+    }
+  }
+}

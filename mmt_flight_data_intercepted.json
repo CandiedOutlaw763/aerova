@@ -1,0 +1,2858 @@
+{
+  "crId": "",
+  "headerBanners": [
+    {
+      "type": "SCROLLABLE_CTA_BANNER",
+      "index": 1,
+      "name": "PEITHO_CAROUSEL",
+      "data": {
+        "bgColor": [
+          "#EFE7DE",
+          "#F8F2EC",
+          "#FEF9F4"
+        ],
+        "options": [
+          {
+            "image": "https://imgak.mmtcdn.com/flights/assets/media/dt/pdp/pdp_bg_blue.png",
+            "title": "<b>Price Drop Protection</b>",
+            "subTitle": "We refund the difference, if price drops",
+            "type": "",
+            "bgColor": [
+              "#FFFFFF"
+            ],
+            "cta": {
+              "type": "IFRAME_POPUP",
+              "data": {
+                "url": "https://promos.makemytrip.com/priceDropProtection?token=dHJhY2tIb3Vycz02JiZtYXhSZWZ1bmQ9Miw1MDAvYWR1bHQmJmNoaXAxVGV4dD1JbnZhbGlkIGlmIGJvb2tpbmcgbW9kaWZpZWQmJmNoaXAyVGV4dD1NYXggcmVmdW5kIG9mIOKCuTIsNTAwJiZ0bmNUZXh0PXRuYw==",
+                "title": "",
+                "method": "",
+                "addQueryParams": null,
+                "tabId": 0,
+                "showFullScreen": false
+              },
+              "tracking": {
+                "omnitureID": "PDP_banner_clicked",
+                "pdtTrackingId": "PDP_banner_clicked",
+                "xdmData": {
+                  "event_type": "action",
+                  "event_name": "content-clicked",
+                  "event_value": "PDP_banner_clicked"
+                }
+              }
+            },
+            "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/visa/blueRight.png"
+          }
+        ],
+        "scrollTime": 4
+      },
+      "tracking": {
+        "omnitureID": "listing_carousal_shown_PRICE_DROP_PROTECTION_BANNER_0",
+        "pdtTrackingId": "listing_carousal_shown_PRICE_DROP_PROTECTION_BANNER_0"
+      }
+    }
+  ],
+  "cardAdditionalDetail": {
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:0_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:0_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:0_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 156</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:0_3": {
+      "cardInfo": {
+        "subTitle": ""
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:10_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:10_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:10_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 158</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:11_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:11_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:11_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:12_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 320 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 320 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:12_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:12_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:13_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:13_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:13_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 158</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:13_3": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 408</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:13_4": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 443</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:14_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:14_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:14_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 164</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:14_3": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 478</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:14_4": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 520</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:15_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 320 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 320 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "otp": {
+        "infoBtnTint": "",
+        "text": "93% on time",
+        "icon": "",
+        "bgColor": [
+          "#FFFFFF",
+          "#DEF5F1"
+        ]
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:15_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "otp": {
+        "infoBtnTint": "",
+        "text": "93% on time",
+        "icon": "",
+        "bgColor": [
+          "#FFFFFF",
+          "#DEF5F1"
+        ]
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:16_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:16_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:16_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 158</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:16_3": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 408</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:16_4": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 443</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:17_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:17_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:17_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 158</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:17_3": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 408</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:17_4": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 443</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:18_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:18_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:18_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 158</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:18_3": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 408</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:18_4": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 443</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:19_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:19_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:19_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 158</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:19_3": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 408</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:19_4": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 443</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:1_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:1_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:1_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 156</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:2_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:2_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:2_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 156</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:3_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:3_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:3_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 156</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:4_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:4_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:4_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 156</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:5_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:5_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:5_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 156</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:6_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:6_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:6_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 156</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:7_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:7_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:7_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 156</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:8_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:8_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:8_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 156</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:9_0": {
+      "couponTag": {
+        "textV2": "<font color='#007E7D'>Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code</font>",
+        "text": "Get Flat 12% OFF using MMTPNB code | Flat  \u20b9 180 OFF using MMTSUPER code",
+        "commonDataKey": "couponTagCommonDetails"
+      },
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:9_1": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 155</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    },
+    "RKEY:c01ad214-eb3d-4483-882e-9e6f37e96ebd:9_2": {
+      "cardInfo": {
+        "subTitle": ""
+      },
+      "lockPriceEnabled": "fareLockActivationEnabled",
+      "lockPriceCardCTA": {
+        "text": "<font color='#008CFF'>Lock this price @ <b>\u20b9 156</b></font>",
+        "type": "FARELOCKPOPUP_V2",
+        "bgColors": [
+          "#E7F4FF",
+          "#FFFFFF"
+        ],
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "apiPath": "/api/v2/review-farelock",
+          "tabId": 0,
+          "closeIcon": "",
+          "cheaperCombos": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>",
+          "giData": null
+        },
+        "tracking": {
+          "omnitureID": "price_lock_listing_cta_non_slasher_clicked",
+          "pdtTrackingId": "price_lock_listing_cta_non_slasher_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "price_lock_listing_cta_non_slasher_clicked"
+          }
+        },
+        "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/plc.png",
+        "rightIcon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/hb.png"
+      }
+    }
+  },
+  "ratingDesc": "This rating is according to the comfort, duration and the amenities provided against the price of the ticket",
+  "trackingData": {
+    "PDTTrackingData": {
+      "wal_is_wal_avl": false,
+      "wal_is_pre_appld": false,
+      "prc_zc_pre_sel": false,
+      "pay_ins_pre_appld": false,
+      "pay_is_ins_appld": false,
+      "prc_chrty_avl": false,
+      "prc_chrty_pre_sel": false,
+      "wal_is_appld": false,
+      "prc_zc_sel": false,
+      "prc_chrty_optd": false,
+      "bkg_is_corp_policy_scope": false,
+      "is_BRB_Shown": false,
+      "lockprice_interstitial_shown": false,
+      "hotelcrosssell_tybanner_shown": false,
+      "hotelcrosssell_reviewcoupon_shown": false,
+      "hotelcrosssell_banner_shown": false,
+      "hotelcrosssell_phase2_banner_shown": false
+    },
+    "omnitureData": {
+      "prop1": [
+        "bi3,ckq,coh,cpt,cw3,dqi,e1a,e3l,e5f,e96,ems,en1"
+      ],
+      "prop54": [
+        "PDP_banner_shown"
+      ]
+    },
+    "pdtEvents": [
+      "PDP_banner_shown"
+    ],
+    "xdmEvents": [
+      {
+        "event_type": "page",
+        "event_name": "content-rendered",
+        "event_value": "listing",
+        "components": {
+          "content_details": [
+            {
+              "id": "PDP_banner_shown"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "tripList": null,
+  "nonAirportTrip": null,
+  "commonData": {
+    "payLaterCardTagLockable": {
+      "lockPriceCTA": {
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiPath": "/api/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "params": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>"
+        },
+        "text": "LOCK PRICE",
+        "type": "FARELOCKPOPUP_V2",
+        "typeShape": "",
+        "tracking": {
+          "omnitureID": "lockprice_listing_clicked",
+          "pdtTrackingId": "lockprice_listing_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "lockprice_listing_clicked"
+          }
+        }
+      }
+    },
+    "fareLockActivationEnabled": {
+      "lockPriceCTA": {
+        "data": {
+          "url": "/v2/review-farelock",
+          "apiPath": "/api/v2/review-farelock",
+          "apiType": "PRICE_LOCK_RESPONSE",
+          "params": null,
+          "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>"
+        },
+        "text": "LOCK PRICE",
+        "type": "FARELOCKPOPUP_V2",
+        "typeShape": "",
+        "tracking": {
+          "omnitureID": "lockprice_listing_clicked",
+          "pdtTrackingId": "lockprice_listing_clicked",
+          "xdmData": {
+            "event_type": "action",
+            "event_name": "content-clicked",
+            "event_value": "lockprice_listing_clicked"
+          }
+        }
+      }
+    },
+    "lockablePriceCTA": {
+      "data": {
+        "url": "/v2/review-farelock",
+        "apiPath": "/api/v2/review-farelock",
+        "apiType": "PRICE_LOCK_RESPONSE",
+        "params": null,
+        "loaderText": "<font color='#0000'> <b>Lock in your dream getaway today and beat the price hike!</b></font>"
+      },
+      "text": "LOCK PRICE",
+      "type": "FARELOCKPOPUP_V2",
+      "typeShape": "",
+      "tracking": {
+        "omnitureID": "lockprice_listing_clicked",
+        "pdtTrackingId": "lockprice_listing_clicked",
+        "xdmData": {
+          "event_type": "action",
+          "event_name": "content-clicked",
+          "event_value": "lockprice_listing_clicked"
+        }
+      }
+    },
+    "OTP_TOOLTIP": {
+      "data": {
+        "title": "<font color='#ffffff'>This flight is almost always on time!</font>",
+        "subtitle": "Data from the past 15 days shows that this flight almost always runs on schedule.",
+        "body": "We still recommend that you check the latest flight status with the airline directly on the day of travel.",
+        "bgColor": "#249995"
+      }
+    },
+    "couponTagCommonDetails": {
+      "bgColors": [
+        "#FFFFFF",
+        "#FCEED4"
+      ],
+      "icon": "https://imgak.mmtcdn.com/flights/assets/media/dt/listing/coupon-icons/ais_coupon.png"
+    }
+  },
+  "assistanceFlow": null
+}

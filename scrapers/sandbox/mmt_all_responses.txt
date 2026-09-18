@@ -1,0 +1,7 @@
+https://www.makemytrip.com/flight/search?itinerary=DEL-BOM-28/09/2026&tripType=O&paxType=A-1_C-0_I-0&intl=false&cabinClass=E | TYPE: document | STATUS: 200
+https://www.makemytrip.com/V_myAtShtkZ7eYSgGpop/SfQ1QSG3/eSkaAg/LwNOa/Th3cWUd?v=1b8beafc-6aa0-2745-4496-585cfb4a1703&t=90832776 | TYPE: script | STATUS: 200
+https://www.makemytrip.com/V_myAtShtkZ7eYSgGpop/uGQ1QSG3ibEkXh/SjEQAg/G1VkV/mZqTGw | TYPE: script | STATUS: 200
+https://www.makemytrip.com/V_myAtShtkZ7eYSgGpop/uGQ1QSG3ibEkXh/SjEQAg/G1VkV/mZqTGw | TYPE: xhr | STATUS: 201
+https://www.makemytrip.com/V_myAtShtkZ7eYSgGpop/uGQ1QSG3ibEkXh/SjEQAg/G1VkV/mZqTGw | TYPE: xhr | STATUS: 201
+https://www.makemytrip.com/V_myAtShtkZ7eYSgGpop/uGQ1QSG3ibEkXh/SjEQAg/G1VkV/mZqTGw | TYPE: xhr | STATUS: 201
+https://www.makemytrip.com/V_myAtShtkZ7eYSgGpop/SfQ1QSG3/eSkaAg/LwNOa/Th3cWUd?t=90832776 | TYPE: xhr | STATUS: 200

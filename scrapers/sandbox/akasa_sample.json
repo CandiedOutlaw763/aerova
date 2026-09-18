@@ -1,0 +1,293 @@
+{
+    "faresAvailable": [
+        {
+            "key": "MH5VMX5_UVB_VTFPN1JXSVh_MTAwMX5_MTN_MX5OQk9NREVMMDEzMDAxMH5YITQ-",
+            "value": {
+                "fareAvailabilityKey": "MH5VMX5_UVB_VTFPN1JXSVh_MTAwMX5_MTN_MX5OQk9NREVMMDEzMDAxMH5YITQ-",
+                "fares": [
+                    {
+                        "classOfService": "U1",
+                        "passengerFares": [
+                            {
+                                "discountedFare": 5640.0000,
+                                "serviceCharges": [
+                                    {"amount": 5640.0000, "type": "FarePrice"},
+                                    {"amount": 75.0, "type": "TravelFee"},
+                                    {"amount": 50.0, "type": "TravelFee"},
+                                    {"amount": 350.0, "type": "TravelFee"},
+                                    {"amount": 236.0, "type": "TravelFee"},
+                                    {"amount": 152.0, "type": "TravelFee"},
+                                    {"amount": 89.0, "type": "TravelFee"},
+                                    {"amount": 288.0, "type": "Tax"}
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "totals": {
+                    "discountedTotal": 5640.0000,
+                    "fareTotal": 6880.0000,
+                    "publishedTotal": 5640.0000
+                }
+            }
+        },
+        {
+            "key": "MH5VMX5_UVB_VTFPN1JXSVh_MTAwMX5_Mn4xfk5CT01EWE4wMDIwMDEwflghMA--",
+            "value": {
+                "fareAvailabilityKey": "MH5VMX5_UVB_VTFPN1JXSVh_MTAwMX5_Mn4xfk5CT01EWE4wMDIwMDEwflghMA--",
+                "fares": [
+                    {
+                        "classOfService": "U1",
+                        "passengerFares": [
+                            {
+                                "discountedFare": 5318.0000,
+                                "serviceCharges": [
+                                    {"amount": 5318.0000, "type": "FarePrice"},
+                                    {"amount": 75.0, "type": "TravelFee"},
+                                    {"amount": 50.0, "type": "TravelFee"},
+                                    {"amount": 350.0, "type": "TravelFee"},
+                                    {"amount": 236.0, "type": "TravelFee"},
+                                    {"amount": 578.0, "type": "TravelFee"},
+                                    {"amount": 89.0, "type": "TravelFee"},
+                                    {"amount": 272.0, "type": "Tax"}
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "totals": {
+                    "discountedTotal": 5318.0000,
+                    "fareTotal": 6968.0000,
+                    "publishedTotal": 5318.0000
+                }
+            }
+        },
+        {
+            "key": "MH5XOX5YflFQflc5TzdSV0lYfjEwMDl_fjJ_MX5OREVMTk1JMDAyMDAxMH5YITM-",
+            "value": {
+                "fareAvailabilityKey": "MH5XOX5YflFQflc5TzdSV0lYfjEwMDl_fjJ_MX5OREVMTk1JMDAyMDAxMH5YITM-",
+                "fares": [
+                    {
+                        "classOfService": "W9",
+                        "passengerFares": [
+                            {
+                                "discountedFare": 5392.0000,
+                                "serviceCharges": [
+                                    {"amount": 5392.0000, "type": "FarePrice"},
+                                    {"amount": 75.0, "type": "TravelFee"},
+                                    {"amount": 50.0, "type": "TravelFee"},
+                                    {"amount": 350.0, "type": "TravelFee"},
+                                    {"amount": 236.0, "type": "TravelFee"},
+                                    {"amount": 152.0, "type": "TravelFee"},
+                                    {"amount": 319.0, "type": "TravelFee"},
+                                    {"amount": 276.0, "type": "Tax"}
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "totals": {
+                    "discountedTotal": 5392.0000,
+                    "fareTotal": 6850.0000,
+                    "publishedTotal": 5392.0000
+                }
+            }
+        },
+        {
+            "key": "MH5UM35_UVB_VDNPN1JXSVh_MTAwMX5_MTV_MX5OQk9NREVMMDE1MDAxMH5YITY-",
+            "value": {
+                "fareAvailabilityKey": "MH5UM35_UVB_VDNPN1JXSVh_MTAwMX5_MTV_MX5OQk9NREVMMDE1MDAxMH5YITY-",
+                "fares": [
+                    {
+                        "classOfService": "T3",
+                        "passengerFares": [
+                            {
+                                "discountedFare": 5945.0000,
+                                "serviceCharges": [
+                                    {"amount": 5945.0000, "type": "FarePrice"},
+                                    {"amount": 75.0, "type": "TravelFee"},
+                                    {"amount": 50.0, "type": "TravelFee"},
+                                    {"amount": 350.0, "type": "TravelFee"},
+                                    {"amount": 236.0, "type": "TravelFee"},
+                                    {"amount": 152.0, "type": "TravelFee"},
+                                    {"amount": 89.0, "type": "TravelFee"},
+                                    {"amount": 304.0, "type": "Tax"}
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "totals": {
+                    "discountedTotal": 5945.0000,
+                    "fareTotal": 7201.0000,
+                    "publishedTotal": 5945.0000
+                }
+            }
+        },
+        {
+            "key": "MH5VMX5_UVB_VTFPN1ZXSVh_MTAwMn5_MTN_MX5OQk9NREVMMDEzMDAxMH5YITU-",
+            "value": {
+                "fareAvailabilityKey": "MH5VMX5_UVB_VTFPN1ZXSVh_MTAwMn5_MTN_MX5OQk9NREVMMDEzMDAxMH5YITU-",
+                "fares": [
+                    {
+                        "classOfService": "U1",
+                        "passengerFares": [
+                            {
+                                "discountedFare": 6021.0000,
+                                "serviceCharges": [
+                                    {"amount": 6021.0000, "type": "FarePrice"},
+                                    {"amount": 75.0, "type": "TravelFee"},
+                                    {"amount": 50.0, "type": "TravelFee"},
+                                    {"amount": 350.0, "type": "TravelFee"},
+                                    {"amount": 236.0, "type": "TravelFee"},
+                                    {"amount": 152.0, "type": "TravelFee"},
+                                    {"amount": 89.0, "type": "TravelFee"},
+                                    {"amount": 308.0, "type": "Tax"}
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "totals": {
+                    "discountedTotal": 6021.0000,
+                    "fareTotal": 7281.0000,
+                    "publishedTotal": 6021.0000
+                }
+            }
+        },
+        {
+            "key": "MH5UM35_UVB_VDNPN1ZXSVh_MTAwMn5_MTV_MX5OQk9NREVMMDE1MDAxMH5YITc-",
+            "value": {
+                "fareAvailabilityKey": "MH5UM35_UVB_VDNPN1ZXSVh_MTAwMn5_MTV_MX5OQk9NREVMMDE1MDAxMH5YITc-",
+                "fares": [
+                    {
+                        "classOfService": "T3",
+                        "passengerFares": [
+                            {
+                                "discountedFare": 6326.0000,
+                                "serviceCharges": [
+                                    {"amount": 6326.0000, "type": "FarePrice"},
+                                    {"amount": 75.0, "type": "TravelFee"},
+                                    {"amount": 50.0, "type": "TravelFee"},
+                                    {"amount": 350.0, "type": "TravelFee"},
+                                    {"amount": 236.0, "type": "TravelFee"},
+                                    {"amount": 152.0, "type": "TravelFee"},
+                                    {"amount": 89.0, "type": "TravelFee"},
+                                    {"amount": 322.0, "type": "Tax"}
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "totals": {
+                    "discountedTotal": 6326.0000,
+                    "fareTotal": 7600.0000,
+                    "publishedTotal": 6326.0000
+                }
+            }
+        },
+        {
+            "key": "MH5XOX5YflFQflc5TzdWV0lYfjEwMDJ_fjJ_MX5OREVMTk1JMDAyMDAxMH5YITI-",
+            "value": {
+                "fareAvailabilityKey": "MH5XOX5YflFQflc5TzdWV0lYfjEwMDJ_fjJ_MX5OREVMTk1JMDAyMDAxMH5YITI-",
+                "fares": [
+                    {
+                        "classOfService": "W9",
+                        "passengerFares": [
+                            {
+                                "discountedFare": 5772.0000,
+                                "serviceCharges": [
+                                    {"amount": 5772.0000, "type": "FarePrice"},
+                                    {"amount": 75.0, "type": "TravelFee"},
+                                    {"amount": 50.0, "type": "TravelFee"},
+                                    {"amount": 350.0, "type": "TravelFee"},
+                                    {"amount": 236.0, "type": "TravelFee"},
+                                    {"amount": 152.0, "type": "TravelFee"},
+                                    {"amount": 319.0, "type": "TravelFee"},
+                                    {"amount": 294.0, "type": "Tax"}
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "totals": {
+                    "discountedTotal": 5772.0000,
+                    "fareTotal": 7248.0000,
+                    "publishedTotal": 5772.0000
+                }
+            }
+        },
+        {
+            "key": "MH5VMX5_UVB_VTFPN1ZXSVh_MTAwMn5_Mn4xfk5CT01EWE4wMDIwMDEwflghMQ--",
+            "value": {
+                "fareAvailabilityKey": "MH5VMX5_UVB_VTFPN1ZXSVh_MTAwMn5_Mn4xfk5CT01EWE4wMDIwMDEwflghMQ--",
+                "fares": [
+                    {
+                        "classOfService": "U1",
+                        "passengerFares": [
+                            {
+                                "discountedFare": 5718.0000,
+                                "serviceCharges": [
+                                    {"amount": 5718.0000, "type": "FarePrice"},
+                                    {"amount": 75.0, "type": "TravelFee"},
+                                    {"amount": 50.0, "type": "TravelFee"},
+                                    {"amount": 350.0, "type": "TravelFee"},
+                                    {"amount": 236.0, "type": "TravelFee"},
+                                    {"amount": 578.0, "type": "TravelFee"},
+                                    {"amount": 89.0, "type": "TravelFee"},
+                                    {"amount": 292.0, "type": "Tax"}
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "totals": {
+                    "discountedTotal": 5718.0000,
+                    "fareTotal": 7388.0000,
+                    "publishedTotal": 5718.0000
+                }
+            }
+        }
+    ],
+    "results": [
+        {
+            "trips": [
+                {
+                    "journeysAvailableByMarket": [
+                        {
+                            "key": "DEL|BOM",
+                            "value": [
+                                {
+                                    "designator": {
+                                        "origin": "DEL",
+                                        "destination": "BOM",
+                                        "departure": "2026-09-30T06:50:00",
+                                        "arrival": "2026-09-30T09:10:00"
+                                    },
+                                    "fares": [
+                                        {
+                                            "fareAvailabilityKey": "MH5VMX5_UVB_VTFPN1JXSVh_MTAwMX5_MTN_MX5OQk9NREVMMDEzMDAxMH5YITQ-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "designator": {
+                                        "origin": "DEL",
+                                        "destination": "BOM",
+                                        "departure": "2026-09-30T08:40:00",
+                                        "arrival": "2026-09-30T10:55:00"
+                                    },
+                                    "fares": [
+                                        {
+                                            "fareAvailabilityKey": "MH5VMX5_UVB_VTFPN1JXSVh_MTAwMX5_MTN_MX5OQk9NREVMMDEzMDAxMH5YITQ-"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "IndiGo": [
+        {
+            "origin": "DEL",
+            "destination": "BOM",
+            "carrier": "6E",
+            "advance_window": "T+15",
+            "fare_class": "Economy",
+            "total_fare": 6000
+        }
+    ],
+    "Akasa Air": [
+        {
+            "origin": "DEL",
+            "destination": "BOM",
+            "carrier": "QP",
+            "advance_window": "T+15",
+            "fare_class": "Economy",
+            "total_fare": 5500
+        }
+    ],
+    "SpiceJet": [
+        {
+            "origin": "DEL",
+            "destination": "BOM",
+            "carrier": "SG",
+            "advance_window": "T+15",
+            "fare_class": "Economy",
+            "total_fare": 6500
+        }
+    ],
+    "Air India": [
+        {
+            "origin": "DEL",
+            "destination": "BOM",
+            "carrier": "AI",
+            "advance_window": "T+15",
+            "fare_class": "Economy",
+            "total_fare": 7000
+        }
+    ],
+    "Air India Express": [
+        {
+            "origin": "DEL",
+            "destination": "BOM",
+            "carrier": "IX",
+            "advance_window": "T+15",
+            "fare_class": "Economy",
+            "total_fare": 6500
+        }
+    ]
+}

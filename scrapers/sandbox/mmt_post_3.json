@@ -1,0 +1,29 @@
+{
+  "url": "https://transporter.makemytrip.com/flights/event-log",
+  "postData": "{\"data\":[{\"device\":{\"browser\":\"Chrome\",\"browser_version\":\"152.0.0.0\",\"device_id\":\"05b32b94-ab48-4efa-9604-b7ce88febb5b\",\"device_resolution\":\"1536*864\",\"os_version\":\"PWA\",\"traffic_country\":\"IN\",\"traffic_currency\":\"INR\",\"traffic_language\":\"eng\",\"traffic_source\":\"MMT\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36\",\"network_type\":\"4g\",\"flavour\":\"PWA\"},\"context\":{\"server_timestamp\":1789319329,\"template_id\":\"38927\",\"session_id\":\"05b32b94-ab48-4efa-9604-b7ce88febb5b\",\"activity_desc\":\"fis_entry_point_shown\",\"funnel_step\":\"landing\",\"page_language\":\"eng\",\"domain_currency\":\"INR\",\"domain_country\":\"91\",\"domain_country_name\":\"IN\",\"page_name\":null,\"lob_code\":\"common\",\"activity_name\":\"click\",\"topic_name\":\"client_common_data_logging_desktop_pwa\",\"client_timestamp\":1789319329,\"domain_language\":\"eng\",\"session_visit_number\":1,\"company_id\":\"MMT\",\"lob_name\":\"common\",\"environment\":\"prod\",\"domain_sbu\":\"India\"},\"user\":{\"is_logged_in\":false},\"exp_experiment_details_list\":[],\"event_details\":{\"log_time\":{}},\"event\":{\"action_name\":\"fis_entry_point_shown\"}}]}",
+  "headers": {
+    "Accept": "*/*",
+    "Content-Type": "application/json",
+    "Log-Source": "mmt_client",
+    "Referer": "https://www.makemytrip.com/",
+    "Request-Data-Encoding": "json",
+    "Sub-Type": "common",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36",
+    "User-Currency": "INR",
+    "app-ver": "1.0.0",
+    "currency": "INR",
+    "device-id": "05b32b94-ab48-4efa-9604-b7ce88febb5b",
+    "deviceid": "05b32b94-ab48-4efa-9604-b7ce88febb5b",
+    "entity-name": "india",
+    "language": "eng",
+    "mcid": "05b32b94-ab48-4efa-9604-b7ce88febb5b",
+    "os": "DESKTOP",
+    "pfm": "DESKTOP",
+    "region": "in",
+    "sec-ch-ua": "\"Chromium\";v=\"152\", \"Not?A_Brand\";v=\"24\", \"Google Chrome\";v=\"152\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "src": "src",
+    "user-country": "IN"
+  }
+}

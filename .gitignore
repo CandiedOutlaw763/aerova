@@ -1,0 +1,12 @@
+scratch/
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+.pytest_cache/
+*.zip
+*.apks
+mmt_extracted/
+mmt_patched_extracted/
+logs/
