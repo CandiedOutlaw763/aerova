@@ -45,8 +45,14 @@ def get_daily_index():
     conn.close()
     
     airport_to_city = {
-        'DEL': 'DELHI', 'BOM': 'MUMBAI', 'BLR': 'BENGALURU', 'HYD': 'HYDERABAD',
-        'MAA': 'CHENNAI', 'CCU': 'KOLKATA', 'AMD': 'AHMEDABAD', 'PNQ': 'PUNE'
+        "DEL": "DELHI", "BOM": "MUMBAI", "BLR": "BENGALURU", "HYD": "HYDERABAD",
+        "MAA": "CHENNAI", "CCU": "KOLKATA", "AMD": "AHMEDABAD", "PNQ": "PUNE",
+        "SXR": "SRINAGAR", "GAU": "GUWAHATI", "GOI": "DABOLIM", "PAT": "PATNA",
+        "COK": "KOCHI", "LKO": "LUCKNOW", "BBI": "BHUBANESWAR", "ATQ": "AMRITSAR",
+        "IXB": "BAGDOGRA", "JAI": "JAIPUR", "IDR": "INDORE", "VNS": "VARANASI",
+        "CJB": "COIMBATORE", "IXC": "CHANDIGARH", "TIR": "TIRUPATI", "IXA": "AGARTALA",
+        "RPR": "RAIPUR", "IXL": "LEH", "NAG": "NAGPUR", "DED": "DEHRADUN",
+        "UDR": "UDAIPUR", "IXJ": "JAMMU"
     }
     
     route_relatives = {}
@@ -124,8 +130,14 @@ def get_prices(fare_class: str = "Economy"):
     conn.close()
     
     airport_to_city = {
-        'DEL': 'DELHI', 'BOM': 'MUMBAI', 'BLR': 'BENGALURU', 'HYD': 'HYDERABAD',
-        'MAA': 'CHENNAI', 'CCU': 'KOLKATA', 'AMD': 'AHMEDABAD', 'PNQ': 'PUNE'
+        "DEL": "DELHI", "BOM": "MUMBAI", "BLR": "BENGALURU", "HYD": "HYDERABAD",
+        "MAA": "CHENNAI", "CCU": "KOLKATA", "AMD": "AHMEDABAD", "PNQ": "PUNE",
+        "SXR": "SRINAGAR", "GAU": "GUWAHATI", "GOI": "DABOLIM", "PAT": "PATNA",
+        "COK": "KOCHI", "LKO": "LUCKNOW", "BBI": "BHUBANESWAR", "ATQ": "AMRITSAR",
+        "IXB": "BAGDOGRA", "JAI": "JAIPUR", "IDR": "INDORE", "VNS": "VARANASI",
+        "CJB": "COIMBATORE", "IXC": "CHANDIGARH", "TIR": "TIRUPATI", "IXA": "AGARTALA",
+        "RPR": "RAIPUR", "IXL": "LEH", "NAG": "NAGPUR", "DED": "DEHRADUN",
+        "UDR": "UDAIPUR", "IXJ": "JAMMU"
     }
     
     route_fares = {}
@@ -172,8 +184,14 @@ def get_elasticity(route: str, fare_class: str = "Economy"):
     conn.close()
     
     airport_to_city = {
-        'DEL': 'DELHI', 'BOM': 'MUMBAI', 'BLR': 'BENGALURU', 'HYD': 'HYDERABAD',
-        'MAA': 'CHENNAI', 'CCU': 'KOLKATA', 'AMD': 'AHMEDABAD', 'PNQ': 'PUNE'
+        "DEL": "DELHI", "BOM": "MUMBAI", "BLR": "BENGALURU", "HYD": "HYDERABAD",
+        "MAA": "CHENNAI", "CCU": "KOLKATA", "AMD": "AHMEDABAD", "PNQ": "PUNE",
+        "SXR": "SRINAGAR", "GAU": "GUWAHATI", "GOI": "DABOLIM", "PAT": "PATNA",
+        "COK": "KOCHI", "LKO": "LUCKNOW", "BBI": "BHUBANESWAR", "ATQ": "AMRITSAR",
+        "IXB": "BAGDOGRA", "JAI": "JAIPUR", "IDR": "INDORE", "VNS": "VARANASI",
+        "CJB": "COIMBATORE", "IXC": "CHANDIGARH", "TIR": "TIRUPATI", "IXA": "AGARTALA",
+        "RPR": "RAIPUR", "IXL": "LEH", "NAG": "NAGPUR", "DED": "DEHRADUN",
+        "UDR": "UDAIPUR", "IXJ": "JAMMU"
     }
     
     fares_by_window = {}
