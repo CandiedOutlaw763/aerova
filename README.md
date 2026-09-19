@@ -213,6 +213,18 @@ The entire pipeline from **Phase 1 to Phase 7** is fully operational.
 - The project is ready for SIH 2026 submission and Vercel hosting.
 
 ---
+### Phase 8: Multi-Tier Fare Expansion & Staggered Cron Architecture
+
+To further improve the accuracy and representation of the APIx index, we expanded the system to support multiple fare classes, addressing compute-time limits on GitHub Actions:
+
+1. **Multi-Tier DGCA Parsing:** The static data extractor (`extract_static_data.py`) was upgraded to parse pages 2 through 8 of the DGCA mandate. We now extract the official baseline tariffs for **Economy, Premium Economy, and Business** classes, properly calculating 5% GST for Economy and 12% for the premium tiers.
+2. **Class-Isolated API Engine:** The FastAPI backend now strictly isolates scraped fares against their exact DGCA fare class baseline in the CSV before calculating the Jevons Geometric Mean. This prevents cross-class inflation contamination.
+3. **Staggered Sequential Scraping:** Due to the strict 6-hour job limit on GitHub Actions, running a parallel matrix across 3 fare classes for 55 routes causes timeouts and SQLite merge conflicts. We solved this by staggering the execution across four independent 5.5-hour blocks based on the UTC hour:
+   - `00:00 UTC`: Economy Scrape
+   - `06:00 UTC`: Premium Economy Scrape
+   - `12:00 UTC`: Business Scrape
+4. **Targeted Top 5 Route Sweep:** The orchestrator targets the Top 5 routes (Delhi-Mumbai, Bengaluru-Delhi, Bengaluru-Mumbai, Delhi-Hyderabad, Delhi-Pune) which alone account for ~25% of all national air traffic.
+
 ---
 
 ## SIH 2026 IDEA PRESENTATION (Slide-wise Content)
