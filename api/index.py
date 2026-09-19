@@ -110,7 +110,8 @@ def get_daily_index():
         "official_mospi_apix": 135.49,
         "routes_mapped": len(route_indices),
         "total_basket": len(weights),
-        "history": history
+        "history": history,
+        "route_indices": route_indices
     }
 
 @app.get("/api/routes")

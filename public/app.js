@@ -1,5 +1,7 @@
 const API_BASE = '/api';
 
+let currentFareClass = 'Economy';
+
 // Plotly Dark Theme Layout Template
 const plotlyLayout = {
     paper_bgcolor: 'rgba(0,0,0,0)',
@@ -24,7 +26,7 @@ async function initDashboard() {
     // Fetch Data
     const [indexData, pricesData] = await Promise.all([
         fetchAPI('/index/daily'),
-        fetchAPI('/prices')
+        fetchAPI(`/prices?fare_class=${encodeURIComponent(currentFareClass)}`)
     ]);
 
     if (!indexData || !pricesData) return;
@@ -57,6 +59,9 @@ async function initDashboard() {
         const fareEl = document.getElementById('val-fare-var');
         fareEl.textContent = `${fareVar > 0 ? '+' : ''}${fareVar.toFixed(2)}%`;
         fareEl.style.color = fareVar > 0 ? 'var(--red)' : 'var(--green)';
+    } else {
+        document.getElementById('val-fare-var').textContent = '--%';
+        document.getElementById('val-fare-var').style.color = '#fff';
     }
 
     // 2. Timeline Chart
@@ -79,6 +84,27 @@ async function initDashboard() {
             line: { color: '#94a3b8', width: 2, dash: 'dash' }
         }
     ], { ...plotlyLayout, hovermode: 'x unified', legend: { orientation: 'h', y: -0.2 } }, { responsive: true });
+
+    // 2.5 Route Indices Chart
+    if (indexData.route_indices) {
+        // We only show routes that actually have an index calculated
+        const calculatedRoutes = Object.keys(indexData.route_indices);
+        // Sort by index descending
+        calculatedRoutes.sort((a, b) => indexData.route_indices[b] - indexData.route_indices[a]);
+        
+        const routeIdxVals = calculatedRoutes.map(r => indexData.route_indices[r]);
+        
+        Plotly.newPlot('chart-route-indices', [{
+            x: calculatedRoutes,
+            y: routeIdxVals,
+            type: 'bar',
+            marker: { color: '#8b5cf6' }
+        }], { 
+            ...plotlyLayout,
+            margin: { t: 20, r: 20, l: 40, b: 120 }, // extra bottom margin for route names
+            yaxis: { title: 'Index (Base = 100)' }
+        }, { responsive: true });
+    }
 
     // 3. Heatmap
     // Filter routes that have scraped data
@@ -119,16 +145,23 @@ async function initDashboard() {
         select.appendChild(opt);
     });
 
-    select.addEventListener('change', (e) => loadElasticity(e.target.value));
+    select.removeEventListener('change', handleElasticityChange);
+    select.addEventListener('change', handleElasticityChange);
     
     // Load first route elasticity if exists
     if (pricesData.length > 0) {
         loadElasticity(pricesData[0].route);
+    } else {
+        Plotly.purge('chart-elasticity');
     }
 }
 
+function handleElasticityChange(e) {
+    loadElasticity(e.target.value);
+}
+
 async function loadElasticity(route) {
-    const data = await fetchAPI(`/elasticity?route=${route}`);
+    const data = await fetchAPI(`/elasticity?route=${route}&fare_class=${encodeURIComponent(currentFareClass)}`);
     if (!data || !data.data) return;
 
     const windows = data.data.map(d => `T+${d.window}`);
@@ -149,6 +182,12 @@ async function loadElasticity(route) {
         yaxis: { title: 'Average Total Fare (₹)', ...plotlyLayout.yaxis }
     }, { responsive: true });
 }
+
+// Global Fare Class Change
+document.getElementById('global-fare-class').addEventListener('change', (e) => {
+    currentFareClass = e.target.value;
+    initDashboard(); // Re-fetch and re-render everything
+});
 
 // Boot
 initDashboard();

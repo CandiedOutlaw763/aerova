@@ -22,6 +22,13 @@
             <h1 class="logo">AERO<span class="highlight">VA</span></h1>
             <p class="subtitle">Airfare Intelligence & Price Index</p>
         </div>
+        <div class="nav-controls" style="margin-left: auto; padding-right: 2rem;">
+            <select id="global-fare-class" class="glass-select" style="font-size: 1rem; padding: 0.5rem 1rem;">
+                <option value="Economy">Economy</option>
+                <option value="Premium Economy">Premium Economy</option>
+                <option value="Business">Business</option>
+            </select>
+        </div>
     </nav>
 
     <main class="dashboard-container">
@@ -57,6 +64,13 @@
             <div class="glass-card chart-container">
                 <h2 class="chart-title">National APIx Timeline</h2>
                 <div id="chart-timeline" class="plot-area"></div>
+            </div>
+        </section>
+        
+        <section class="charts-section">
+            <div class="glass-card chart-container">
+                <h2 class="chart-title">Route-Specific Indices (Jevons Geo Mean)</h2>
+                <div id="chart-route-indices" class="plot-area"></div>
             </div>
         </section>
         
