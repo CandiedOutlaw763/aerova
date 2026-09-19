@@ -2,8 +2,22 @@ name: Daily Flight Scraper & APIx Generator
 
 on:
   schedule:
-    - cron: '0 1 * * *' # Runs at 1 AM UTC every day
-  workflow_dispatch: # Allows manual trigger from GitHub UI
+    - cron: '0 0 * * *'  # 5:30 AM IST (Economy)
+    - cron: '0 6 * * *'  # 11:30 AM IST (Premium Economy)
+    - cron: '0 12 * * *' # 5:30 PM IST (Business)
+    - cron: '0 18 * * *' # 11:30 PM IST (First Class)
+  workflow_dispatch:
+    inputs:
+      target_class:
+        description: 'Target Fare Class to scrape'
+        required: true
+        default: 'Economy'
+        type: choice
+        options:
+          - Economy
+          - Premium Economy
+          - Business
+          - First Class
 
 jobs:
   scrape-and-update:
@@ -27,10 +41,31 @@ jobs:
           playwright install chromium
           playwright install-deps
           
+      - name: Determine Target Class
+        id: set-class
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "TARGET_CLASS=${{ github.event.inputs.target_class }}" >> $GITHUB_ENV
+          else
+            HOUR=$(date -u +"%H")
+            if [ "$HOUR" == "00" ]; then
+              echo "TARGET_CLASS=Economy" >> $GITHUB_ENV
+            elif [ "$HOUR" == "06" ]; then
+              echo "TARGET_CLASS=Premium Economy" >> $GITHUB_ENV
+            elif [ "$HOUR" == "12" ]; then
+              echo "TARGET_CLASS=Business" >> $GITHUB_ENV
+            elif [ "$HOUR" == "18" ]; then
+              echo "TARGET_CLASS=First Class" >> $GITHUB_ENV
+            else
+              echo "TARGET_CLASS=Economy" >> $GITHUB_ENV
+            fi
+          fi
+          
       - name: Run Daily Scraper Orchestrator
         run: |
-          # This runs the scraper, populating flights.db
-          python scrapers/engine/orchestrator.py
+          # This runs the full scrape across the top 5 routes
+          python scrapers/engine/orchestrator.py --full --target-class "${{ env.TARGET_CLASS }}"
+        timeout-minutes: 350
           
       - name: Commit and Push Updated Database
         run: |
@@ -39,5 +74,5 @@ jobs:
           git add scrapers/engine/flights.db
           
           # Only commit if there are changes
-          git diff --staged --quiet || git commit -m "Auto-update: Daily scrape of flights.db"
+          git diff --staged --quiet || git commit -m "Auto-update: Daily scrape for ${{ env.TARGET_CLASS }}"
           git push

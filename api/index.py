@@ -30,7 +30,10 @@ def get_weights():
 
 def get_tariffs():
     df = pd.read_csv(os.path.join(STATIC_DATA_DIR, 'tariff_base_prices.csv'))
-    return dict(zip(df['ROUTE'], df['TOTAL_FARE']))
+    tariffs = {}
+    for _, row in df.iterrows():
+        tariffs[(row['ROUTE'], row['FARE_CLASS'])] = row['TOTAL_FARE']
+    return tariffs
 
 @app.get("/api/index/daily")
 def get_daily_index():
@@ -38,7 +41,7 @@ def get_daily_index():
     tariffs = get_tariffs()
     
     conn = get_db_connection()
-    df = pd.read_sql_query("SELECT origin, destination, total_fare FROM flights WHERE total_fare IS NOT NULL", conn)
+    df = pd.read_sql_query("SELECT origin, destination, fare_class, total_fare FROM flights WHERE total_fare IS NOT NULL", conn)
     conn.close()
     
     airport_to_city = {
@@ -52,14 +55,19 @@ def get_daily_index():
         dest = airport_to_city.get(row['destination'], row['destination'])
         route = f"{sorted([orig, dest])[0]}-{sorted([orig, dest])[1]}"
         
-        if route in weights and route in tariffs:
-            tariff_fare = tariffs[route]
-            scraped_fare = row['total_fare']
-            relative = (scraped_fare / tariff_fare) * 100
+        if route in weights:
+            f_class = row.get('fare_class', 'Economy')
+            if pd.isna(f_class) or not f_class:
+                f_class = 'Economy'
             
-            if route not in route_relatives:
-                route_relatives[route] = []
-            route_relatives[route].append(relative)
+            tariff_fare = tariffs.get((route, f_class))
+            if tariff_fare:
+                scraped_fare = row['total_fare']
+                relative = (scraped_fare / tariff_fare) * 100
+                
+                if route not in route_relatives:
+                    route_relatives[route] = []
+                route_relatives[route].append(relative)
             
     # Calculate Jevons Geo Mean per route
     route_indices = {}
@@ -103,15 +111,16 @@ def get_daily_index():
 def get_routes():
     weights = get_weights()
     tariffs = get_tariffs()
-    return [{"route": r, "weight": w, "dgca_avg": tariffs.get(r, None)} for r, w in weights.items()]
+    return [{"route": r, "weight": w, "dgca_avg": tariffs.get((r, "Economy"), None)} for r, w in weights.items()]
 
 @app.get("/api/prices")
-def get_prices():
+def get_prices(fare_class: str = "Economy"):
     weights = get_weights()
     tariffs = get_tariffs()
     
     conn = get_db_connection()
-    df = pd.read_sql_query("SELECT origin, destination, total_fare FROM flights WHERE total_fare IS NOT NULL", conn)
+    # Parameterized query to avoid SQL injection
+    df = pd.read_sql_query("SELECT origin, destination, total_fare FROM flights WHERE total_fare IS NOT NULL AND fare_class=?", conn, params=(fare_class,))
     conn.close()
     
     airport_to_city = {
@@ -133,7 +142,7 @@ def get_prices():
     results = []
     for route, fares in route_fares.items():
         avg_scraped = sum(fares) / len(fares)
-        dgca = tariffs.get(route, 0)
+        dgca = tariffs.get((route, fare_class), 0)
         variance = 0
         if dgca > 0:
             variance = ((avg_scraped - dgca) / dgca) * 100
@@ -150,16 +159,16 @@ def get_prices():
             results.append({
                 "route": route,
                 "scraped_avg": None,
-                "dgca_avg": tariffs.get(route, 0),
+                "dgca_avg": tariffs.get((route, fare_class), 0),
                 "variance_pct": None
             })
             
     return results
 
 @app.get("/api/elasticity")
-def get_elasticity(route: str):
+def get_elasticity(route: str, fare_class: str = "Economy"):
     conn = get_db_connection()
-    df = pd.read_sql_query("SELECT origin, destination, advance_purchase_window, total_fare FROM flights WHERE total_fare IS NOT NULL", conn)
+    df = pd.read_sql_query("SELECT origin, destination, advance_purchase_window, total_fare FROM flights WHERE total_fare IS NOT NULL AND fare_class=?", conn, params=(fare_class,))
     conn.close()
     
     airport_to_city = {

@@ -57,70 +57,72 @@ def extract_tariffs():
         valid_routes = set()
         
     tariff = defaultdict(dict)
-    text = ""
+    
+    page_classes = {
+        2: "Economy", 3: "Economy", 4: "Economy",
+        5: "Premium Economy", 6: "Premium Economy",
+        7: "Business", 8: "Business",
+        9: "First Class"
+    }
+    
     with open(PDF_PATH, "rb") as f:
         reader = PyPDF2.PdfReader(f)
-        # Economy Fares span pages 2, 3, and 4 (0-indexed). 
-        # Page 5 starts Premium Economy.
-        for i in range(2, 5):
-            text += reader.pages[i].extract_text() + "\n"
+        for i in range(2, 10):
+            fare_class = page_classes.get(i, "Economy")
+            text = reader.pages[i].extract_text()
             
-    pattern = re.compile(r'^(\d+)\s+([A-Za-z\s]+?)\s+([A-Za-z\s]+?)\s+(\d+)\s+(Minimum|Maximum)\s+([\d\s]+)$', re.MULTILINE)
-    
-    for match in pattern.finditer(text):
-        origin = match.group(2).strip().upper()
-        dest = match.group(3).strip().upper()
-        min_max = match.group(5).lower()
-        prices_str = match.group(6).strip()
-        prices = [int(p) for p in prices_str.split()]
-        
-        # Apply Aliases to match DGCA traffic names
-        aliases = {
-            "GOA": "DABOLIM",
-            "VIZAG": "VISAKHAPATNAM",
-            "MANGALURU": "MANGALORE"
-        }
-        mapped_origin = aliases.get(origin, origin)
-        mapped_dest = aliases.get(dest, dest)
-        
-        route = f"{mapped_origin}-{mapped_dest}"
-        # We only care about the top 55 routes
-        if route not in valid_routes:
-            # Check the flipped route
-            flipped = f"{mapped_dest}-{mapped_origin}"
-            if flipped not in valid_routes:
-                continue
-            else:
-                route = flipped
+            pattern = re.compile(r'^(\d+)\s+([A-Za-z\s]+?)\s+([A-Za-z\s]+?)\s+(?:(\d+)\s+)?(Minimum|Maximum)\s+([\d\s]+)$', re.MULTILINE)
+            for match in pattern.finditer(text):
+                origin = match.group(2).strip().upper()
+                dest = match.group(3).strip().upper()
+                min_max = match.group(5).lower()
+                prices_str = match.group(6).strip()
+                prices = [int(p) for p in prices_str.split()]
                 
-        if prices:
-            # Average all the Levels (Booking Classes) for this Min/Max row
-            avg_price = sum(prices) / len(prices)
-            
-            if route not in tariff:
-                tariff[route] = {'min_avg': 0, 'max_avg': 0, 'origin': origin}
-            
-            if min_max == 'minimum':
-                tariff[route]['min_avg'] = avg_price
-            else:
-                tariff[route]['max_avg'] = avg_price
+                # Apply Aliases to match DGCA traffic names
+                aliases = {
+                    "GOA": "DABOLIM",
+                    "VIZAG": "VISAKHAPATNAM",
+                    "MANGALURU": "MANGALORE"
+                }
+                mapped_origin = aliases.get(origin, origin)
+                mapped_dest = aliases.get(dest, dest)
+                
+                route = f"{mapped_origin}-{mapped_dest}"
+                if route not in valid_routes:
+                    flipped = f"{mapped_dest}-{mapped_origin}"
+                    if flipped not in valid_routes:
+                        continue
+                    else:
+                        route = flipped
+                        
+                if prices:
+                    avg_price = sum(prices) / len(prices)
+                    
+                    key = f"{route}_{fare_class}"
+                    if key not in tariff:
+                        tariff[key] = {'min_avg': 0, 'max_avg': 0, 'origin': origin, 'route': route, 'fare_class': fare_class}
+                    
+                    if min_max == 'minimum':
+                        tariff[key]['min_avg'] = avg_price
+                    else:
+                        tariff[key]['max_avg'] = avg_price
                 
     final_data = []
-    for route, data in tariff.items():
+    for key, data in tariff.items():
         if data['min_avg'] > 0 and data['max_avg'] > 0:
-            # Midpoint of the Minimum and Maximum average
             base_fare = (data['min_avg'] + data['max_avg']) / 2
             
-            # Forward calculate Total Fare
             origin_city = data['origin']
             udf = UDF_MAP.get(origin_city, UDF_MAP["DEFAULT"])
             fixed_fees = ASF + udf
-            gst_rate = 0.05  # Economy GST
+            gst_rate = 0.05 if data['fare_class'] == "Economy" else 0.12
             
             total_fare = (base_fare * (1 + gst_rate)) + fixed_fees
             
             final_data.append({
-                'ROUTE': route, 
+                'ROUTE': data['route'], 
+                'FARE_CLASS': data['fare_class'],
                 'BASE_FARE': base_fare,
                 'TOTAL_FARE': total_fare
             })

@@ -98,15 +98,62 @@ def run_orchestrator(origin, destination, advance_window, fare_classes, date_str
     total_time = time.time() - start_time
     print(f"\n[Orchestrator] Finished! Total time taken: {total_time:.2f} seconds.")
 
+CITY_TO_IATA = {
+    "DELHI": "DEL", "MUMBAI": "BOM", "BENGALURU": "BLR", "HYDERABAD": "HYD",
+    "CHENNAI": "MAA", "KOLKATA": "CCU", "AHMEDABAD": "AMD", "PUNE": "PNQ",
+    "SRINAGAR": "SXR", "GUWAHATI": "GAU", "DABOLIM": "GOI", "PATNA": "PAT",
+    "KOCHI": "COK", "LUCKNOW": "LKO", "BHUBANESWAR": "BBI", "AMRITSAR": "ATQ",
+    "BAGDOGRA": "IXB", "JAIPUR": "JAI", "INDORE": "IDR", "VARANASI": "VNS",
+    "COIMBATORE": "CJB", "CHANDIGARH": "IXC", "TIRUPATI": "TIR", "AGARTALA": "IXA",
+    "RAIPUR": "RPR", "LEH": "IXL", "NAGPUR": "NAG", "DEHRADUN": "DED",
+    "UDAIPUR": "UDR", "JAMMU": "IXJ"
+}
+
 if __name__ == "__main__":
     import sys
+    import argparse
+    import os
+    import pandas as pd
+    from datetime import datetime, timedelta
+    
     # Essential on Windows to avoid freezing when starting new processes
     multiprocessing.freeze_support()
     
-    # Test run: DEL->BOM, T+15, Economy and Business, 28 Sep 2026
-    # Optional spider testing from cmd line
-    if len(sys.argv) > 1:
-        spiders_arg = sys.argv[1].split(',')
-        run_orchestrator("DEL", "BOM", "15", ["Economy", "Business"], "28/09/2026", spider_filter=spiders_arg)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--full", action="store_true", help="Run full scrape using top 5 routes from route_weights.csv")
+    parser.add_argument("--target-class", type=str, default="Economy", help="Target fare class to scrape")
+    parser.add_argument("--spiders", type=str, help="Comma separated list of spiders to run")
+    args = parser.parse_args()
+    
+    spider_filter = args.spiders.split(',') if args.spiders else None
+    
+    if args.full:
+        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        weights_path = os.path.join(BASE_DIR, 'pipeline', 'static_data', 'route_weights.csv')
+        df = pd.read_csv(weights_path)
+        top_5 = df.head(5)['ROUTE'].tolist()
+        
+        windows = [1, 7, 15, 30, 45, 60]
+        base_date = datetime.now()
+        
+        for route in top_5:
+            orig_city, dest_city = route.split('-')
+            orig_iata = CITY_TO_IATA.get(orig_city)
+            dest_iata = CITY_TO_IATA.get(dest_city)
+            
+            if not orig_iata or not dest_iata:
+                print(f"Skipping route {route} due to missing IATA mapping.")
+                continue
+                
+            for w in windows:
+                target_date = base_date + timedelta(days=w)
+                date_str = target_date.strftime("%d/%m/%Y")
+                
+                print(f"\n======================================")
+                print(f" FULL SCRAPE: {orig_iata}->{dest_iata} | Window: T+{w} | Class: {args.target_class}")
+                print(f"======================================")
+                
+                run_orchestrator(orig_iata, dest_iata, str(w), [args.target_class], date_str, spider_filter=spider_filter)
     else:
-        run_orchestrator("DEL", "BOM", "15", ["Economy", "Business"], "28/09/2026")
+        # Default test run
+        run_orchestrator("DEL", "BOM", "15", [args.target_class], "28/09/2026", spider_filter=spider_filter)
