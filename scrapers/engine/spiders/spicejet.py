@@ -13,7 +13,6 @@ class Spider:
         print(f"[{self.name}] Scraping API for {origin} -> {destination} on {date_str}...")
         
         options = webdriver.ChromeOptions()
-        options.add_argument('--headless=new')
         options.add_argument('--start-maximized')
         options.set_capability('goog:loggingPrefs', {'performance': 'ALL'})
         options.add_experimental_option('excludeSwitches', ['enable-automation'])

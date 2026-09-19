@@ -60,7 +60,7 @@ jobs:
       - name: Run Daily Scraper Orchestrator
         run: |
           # This runs the full scrape across the top 5 routes
-          python scrapers/engine/orchestrator.py --full --target-class "${{ env.TARGET_CLASS }}"
+          xvfb-run --auto-servernum python scrapers/engine/orchestrator.py --full --target-class "${{ env.TARGET_CLASS }}"
           # Run the data cleaning pipeline to deduplicate and impute taxes
           python scrapers/pipeline/clean_data.py
         timeout-minutes: 350

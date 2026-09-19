@@ -36,7 +36,6 @@ class Spider(UCSpider):
         )
 
         options = uc.ChromeOptions()
-        options.add_argument('--headless=new')
         # No need for performance logs for DOM parsing, but we can keep it
         options.set_capability('goog:loggingPrefs', {'performance': 'ALL'})
         driver = uc.Chrome(version_main=152, options=options)

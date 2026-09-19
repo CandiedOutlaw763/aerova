@@ -11,7 +11,6 @@ class UCSpider:
     def get_driver(self):
         # We specify version_main=152 to match the local Chrome version of the runner
         options = uc.ChromeOptions()
-        options.add_argument('--headless=new')
         options.add_argument('--window-size=1920,1080')
         # Removing suspicious flags that trigger Akamai Bot Manager
         options.set_capability('goog:loggingPrefs', {'performance': 'ALL'})
