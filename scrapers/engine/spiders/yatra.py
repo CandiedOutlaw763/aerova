@@ -14,6 +14,7 @@ class Spider(UCSpider):
         flights_result = []
 
         options = uc.ChromeOptions()
+        options.add_argument('--headless=new')
         driver = uc.Chrome(version_main=152, options=options)
         setup_cdp_limits(driver)
 

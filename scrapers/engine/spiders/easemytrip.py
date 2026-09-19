@@ -106,6 +106,7 @@ class Spider(UCSpider):
         )
 
         options = uc.ChromeOptions()
+        options.add_argument('--headless=new')
         options.set_capability('goog:loggingPrefs', {'performance': 'ALL'})
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
