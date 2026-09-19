@@ -6,18 +6,10 @@
       "use": "@vercel/python"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "scrapers/backend/main.py"
-    },
-    {
-      "src": "/static/(.*)",
-      "dest": "/scrapers/backend/static/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "scrapers/backend/main.py"
+      "source": "/api/(.*)",
+      "destination": "/scrapers/backend/main.py"
     }
   ]
 }
