@@ -5,7 +5,6 @@ on:
     - cron: '0 0 * * *'  # 5:30 AM IST (Economy)
     - cron: '0 6 * * *'  # 11:30 AM IST (Premium Economy)
     - cron: '0 12 * * *' # 5:30 PM IST (Business)
-    - cron: '0 18 * * *' # 11:30 PM IST (First Class)
   workflow_dispatch:
     inputs:
       target_class:
@@ -17,7 +16,6 @@ on:
           - Economy
           - Premium Economy
           - Business
-          - First Class
 
 jobs:
   scrape-and-update:
@@ -54,8 +52,6 @@ jobs:
               echo "TARGET_CLASS=Premium Economy" >> $GITHUB_ENV
             elif [ "$HOUR" == "12" ]; then
               echo "TARGET_CLASS=Business" >> $GITHUB_ENV
-            elif [ "$HOUR" == "18" ]; then
-              echo "TARGET_CLASS=First Class" >> $GITHUB_ENV
             else
               echo "TARGET_CLASS=Economy" >> $GITHUB_ENV
             fi
