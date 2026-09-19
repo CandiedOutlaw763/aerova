@@ -1,7 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
+
 import sqlite3
 import pandas as pd
 import os
@@ -17,8 +16,8 @@ app.add_middleware(
 )
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DB_PATH = os.path.join(BASE_DIR, 'engine', 'flights.db')
-STATIC_DATA_DIR = os.path.join(BASE_DIR, 'pipeline', 'static_data')
+DB_PATH = os.path.join(BASE_DIR, 'scrapers', 'engine', 'flights.db')
+STATIC_DATA_DIR = os.path.join(BASE_DIR, 'scrapers', 'pipeline', 'static_data')
 
 def get_db_connection():
     conn = sqlite3.connect(DB_PATH)
@@ -210,9 +209,4 @@ def get_elasticity(route: str):
     results = sorted(results, key=lambda x: x["window"])
     return {"route": route, "data": results}
 
-# Serve static frontend
-app.mount("/static", StaticFiles(directory=os.path.join(os.path.dirname(__file__), "static")), name="static")
 
-@app.get("/")
-def serve_index():
-    return FileResponse(os.path.join(os.path.dirname(__file__), "static", "index.html"))
