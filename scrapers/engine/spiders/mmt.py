@@ -484,7 +484,7 @@ class Spider(UCSpider):
         except Exception as e:
             print(f"[{self.name}] Scraping failed: {e}")
         finally:
-            with open("C:/Users/siddh/.gemini/antigravity-ide/brain/c0071c49-e902-49fa-bd64-446178c24a85/scratch/mmt_source.html", "w", encoding="utf-8") as f:
+            with open("mmt_source_debug.html", "w", encoding="utf-8") as f:
                 f.write(driver.page_source)
             driver.quit()
 

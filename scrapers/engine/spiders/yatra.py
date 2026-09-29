@@ -14,7 +14,7 @@ class Spider(UCSpider):
         flights_result = []
 
         options = uc.ChromeOptions()
-        driver = uc.Chrome(version_main=152, options=options)
+        driver = uc.Chrome(version_main=153, options=options)
         setup_cdp_limits(driver)
 
         try:

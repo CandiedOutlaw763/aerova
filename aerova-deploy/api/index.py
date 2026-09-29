@@ -20,8 +20,8 @@ app.add_middleware(
 )
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DB_PATH = os.path.join(BASE_DIR, 'scrapers', 'engine', 'flights.db')
-STATIC_DATA_DIR = os.path.join(BASE_DIR, 'scrapers', 'pipeline', 'static_data')
+DB_PATH = os.path.join(BASE_DIR, 'data', 'flights.db')
+STATIC_DATA_DIR = os.path.join(BASE_DIR, 'data')
 
 # Serve the frontend HTML from root
 app.mount("/static", StaticFiles(directory=BASE_DIR), name="static")
@@ -487,7 +487,7 @@ if os.path.exists(root_dir):
 def get_pdf_list():
     return ["TARIFF-SHEET-AS-ON-28-NOV-24.pdf"]
 
-traffic_dir = os.path.join(root_dir, "india-aviation-traffic", "2025_data")
+traffic_dir = os.path.join(root_dir, "data", "dgca-data")
 if os.path.exists(traffic_dir):
     app.mount("/dgca-data", StaticFiles(directory=traffic_dir), name="dgca-data")
 

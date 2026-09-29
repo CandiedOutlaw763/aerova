@@ -112,7 +112,7 @@ class Spider(UCSpider):
         options.add_argument('--disable-gpu')
         options.add_argument('--dns-prefetch-disable')
         options.add_argument('--disable-blink-features=AutomationControlled')
-        self.driver = uc.Chrome(version_main=152, options=options)
+        self.driver = uc.Chrome(version_main=153, options=options)
         setup_cdp_limits(self.driver)
 
         try:

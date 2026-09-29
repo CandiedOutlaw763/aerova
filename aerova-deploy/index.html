@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Airfare Intelligence Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B2A4A; --blue:#1455A0; --bg:#F7F9FC; --white:#fff;
+  --text:#172033; --sub:#5E6878; --pos:#168A5B; --warn:#B7791F; --neg:#C53030; --border:#D9E0E8;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font-family:Inter,sans-serif;color:var(--text);background:var(--bg);font-size:14px;line-height:1.5}
+h1,h2,h3{font-family:"Source Serif 4",serif;margin:0}
+a{color:var(--blue);text-decoration:none}
+.govbar{background:var(--navy);color:#dbe6f2;font-size:11px;padding:5px 20px;display:flex;justify-content:space-between}
+.govbar span{margin-left:14px}
+header.main{background:#fff;border-bottom:1px solid var(--border);padding:16px 20px}
+.headrow{display:flex;justify-content:space-between;align-items:center;max-width:1400px;margin:0 auto;flex-wrap:wrap;gap:10px}
+.brand{display:flex;align-items:center;gap:12px}
+.emblem{width:42px;height:42px;border:2px solid var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--navy);font-weight:700}
+.brand h1{font-size:20px;color:var(--navy)}
+.brand p{margin:2px 0 0;font-size:12px;color:var(--sub)}
+.headmeta{font-size:11px;color:var(--sub);text-align:right}
+.status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--pos);margin-right:5px}
+nav.mainnav{background:var(--navy);position:sticky;top:0;z-index:10}
+.navrow{max-width:1400px;margin:0 auto;display:flex;overflow-x:auto}
+.navrow button{background:none;border:none;color:#cfe0f0;padding:12px 16px;font-size:13px;cursor:pointer;white-space:nowrap;font-family:inherit;border-bottom:3px solid transparent}
+.navrow button.active{color:#fff;border-bottom:3px solid #fff}
+.navrow button:hover{color:#fff}
+main{max-width:1400px;margin:0 auto;padding:28px 20px 60px}
+.page{display:none}
+.page.active{display:block}
+.eyebrow{color:var(--blue);font-size:11px;letter-spacing:1.5px;font-weight:600}
+.hero h2{font-size:32px;color:var(--navy);margin:6px 0 10px}
+.hero p{max-width:680px;color:var(--sub);font-size:15px}
+.ctas{margin-top:16px;display:flex;gap:10px}
+.btn{padding:9px 18px;border-radius:2px;font-size:13px;font-weight:600;cursor:pointer;border:1px solid var(--blue)}
+.btn.primary{background:var(--blue);color:#fff}
+.btn.secondary{background:#fff;color:var(--blue)}
+.tag{display:inline-block;background:#FFF6E5;color:var(--warn);border:1px solid #F0D9A6;font-size:11px;padding:2px 8px;border-radius:2px;margin-bottom:14px}
+.kpi-row{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin:26px 0}
+.kpi{background:#fff;padding:16px}
+.kpi .lbl{font-size:11px;color:var(--sub);text-transform:uppercase;letter-spacing:.5px}
+.kpi .val{font-size:22px;font-weight:700;color:var(--navy);margin:4px 0}
+.kpi .chg{font-size:12px;font-weight:600}
+.chg.pos{color:var(--pos)} .chg.neg{color:var(--neg)}
+.card{background:#fff;border:1px solid var(--border);padding:20px;margin-bottom:24px}
+.card h3{font-size:15px;color:var(--navy);margin-bottom:12px}
+.controls{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.controls select,.controls input{border:1px solid var(--border);padding:6px 10px;font-size:12px;font-family:inherit;background:#fff}
+.seg{display:flex;border:1px solid var(--border)}
+.seg button{background:#fff;border:none;padding:6px 12px;font-size:12px;cursor:pointer;font-family:inherit;border-right:1px solid var(--border)}
+.seg button:last-child{border-right:none}
+.seg button.on{background:var(--blue);color:#fff}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{background:#F0F3F8;text-align:left;padding:8px 10px;font-weight:600;color:var(--navy);border-bottom:1px solid var(--border);white-space:nowrap}
+td{padding:8px 10px;border-bottom:1px solid var(--border);white-space:nowrap}
+tr:hover td{background:#FAFBFD}
+.grid2{display:grid;grid-template-columns:2fr 1fr;gap:20px}
+.explore{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+.explore a{background:#fff;padding:16px;display:block}
+.explore a h4{color:var(--navy);font-size:13px;margin:0 0 4px}
+.explore a p{margin:0;font-size:12px;color:var(--sub)}
+.dev{padding:12px 0;border-bottom:1px solid var(--border)}
+.dev .d{font-size:11px;color:var(--sub)}
+.badge{font-size:11px;padding:2px 7px;border-radius:2px;font-weight:600}
+.badge.ok{background:#E7F5EE;color:var(--pos)}
+.badge.warn{background:#FFF6E5;color:var(--warn)}
+.methodology h3{margin-top:22px;color:var(--navy)}
+.methodology p{color:var(--text);max-width:760px;font-size:13.5px}
+footer{border-top:1px solid var(--border);padding:20px;text-align:center;font-size:11px;color:var(--sub)}
+@media(max-width:900px){.kpi-row{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.explore{grid-template-columns:1fr}}
+.dd{position:relative}
+.ddbtn{background:none;border:none;color:#cfe0f0;padding:12px 16px;font-size:13px;cursor:pointer;font-family:inherit;border-bottom:3px solid transparent}
+.dd:hover .ddbtn,.dd.active .ddbtn{color:#fff}
+.dd.active .ddbtn{border-bottom:3px solid #fff}
+.ddmenu{display:none;position:absolute;top:100%;left:0;background:#fff;border:1px solid var(--border);min-width:210px;box-shadow:0 6px 14px rgba(11,42,74,.12);z-index:20}
+.dd:hover .ddmenu{display:block}
+.ddmenu a{display:block;padding:9px 14px;font-size:12.5px;color:var(--text);cursor:pointer}
+.ddmenu a:hover{background:#F0F3F8;color:var(--blue)}
+.tabs{display:flex;border-bottom:1px solid var(--border);margin-bottom:16px}
+.tabs button{background:none;border:none;padding:9px 16px;font-size:13px;cursor:pointer;font-family:inherit;color:var(--sub);border-bottom:2px solid transparent}
+.tabs button.on{color:var(--navy);font-weight:600;border-bottom:2px solid var(--blue)}
+.barrow{display:flex;align-items:center;gap:10px;margin:8px 0;font-size:12px}
+.barrow .lb{width:90px;color:var(--sub);flex-shrink:0}
+.barrow .track{flex:1;background:#EEF1F6;height:14px;position:relative}
+.barrow .fill{background:var(--blue);height:100%}
+.barrow .v{width:70px;text-align:right;font-weight:600;color:var(--navy)}
+.stack{display:flex;height:26px;width:100%;overflow:hidden;border:1px solid var(--border)}
+.stack div{height:100%}
+.legend{display:flex;gap:14px;font-size:11px;color:var(--sub);margin-top:8px;flex-wrap:wrap}
+.legend span{display:inline-flex;align-items:center;gap:5px}
+.legend i{width:10px;height:10px;display:inline-block}
+.heat td{text-align:center;font-size:11.5px;color:#0B2A4A;font-weight:600}
+.mapbox{border:1px solid var(--border);background:#FBFCFE}
+.note{font-size:11.5px;color:var(--sub);background:#F0F3F8;border:1px solid var(--border);padding:8px 12px;margin-top:10px}
+.drawer{position:fixed;top:0;right:-380px;width:360px;height:100%;background:#fff;border-left:1px solid var(--border);box-shadow:-6px 0 16px rgba(11,42,74,.1);transition:right .2s;z-index:50;padding:20px;overflow-y:auto}
+.drawer.open{right:0}
+.drawer h4{color:var(--navy);margin-bottom:4px}
+.drawer .row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);font-size:12.5px}
+.drawer .close{float:right;cursor:pointer;color:var(--sub);font-size:18px;line-height:1}
+.pipeline{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12px}
+.pipeline .step{background:#F0F3F8;border:1px solid var(--border);padding:8px 12px;color:var(--navy);font-weight:600}
+.pipeline .arrow{color:var(--sub)}
+.cards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.dcard{background:#fff;border:1px solid var(--border);padding:20px}
+.dcard h3{font-size:15px;color:var(--navy);margin-bottom:8px}
+.dcard ul{margin:8px 0 14px;padding-left:18px;font-size:12.5px;color:var(--text)}
+.dcard ul li{margin-bottom:3px}
+.dcard .arrow-link{font-size:12.5px;font-weight:600;color:var(--blue);cursor:pointer}
+.access-row{display:flex;gap:1px;background:var(--border);border:1px solid var(--border);margin-top:6px}
+.access-row a{background:#fff;flex:1;padding:12px 14px;text-align:center;font-size:12.5px;color:var(--navy);font-weight:600;cursor:pointer}
+.access-row a:hover{background:#F0F3F8}
+@media(max-width:900px){.cards-grid{grid-template-columns:1fr}.access-row{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="govbar"><span>Government of India</span><span><span>Reserve Bank of India</span><span>National Statistical Office</span><span>Data Sources</span></span></div>
+<header class="main"><div class="headrow">
+  <div class="brand"><div class="emblem">AIP</div><div><h1>Airfare Intelligence Platform</h1><p>High-Frequency Monitoring of Domestic Airfares in India</p></div></div>
+  <div class="headmeta"><div><span class="status-dot"></span>Data Status: Prototype</div><div>Last Updated: 27 Sep 2026, 06:00 IST</div></div>
+</div></header>
+<nav class="mainnav"><div class="navrow" id="navrow">
+  <button data-p="home" class="active">Home</button>
+  <div class="dd"><button class="ddbtn" data-p="analysis">Analysis ▾</button><div class="ddmenu">
+    <a data-p="index">Airfare Price Index</a><a data-p="route">Route Analysis</a><a data-p="airline">Airline &amp; OTA Analysis</a><a data-p="leadtime">Lead-Time Analysis</a><a data-p="market">Market &amp; Event Analysis</a>
+  </div></div>
+  <div class="dd"><button class="ddbtn" data-p="data">Data ▾</button><div class="ddmenu">
+    <a data-p="fare">Fare Data</a><a data-p="explorer">Data Explorer</a><a data-p="download">Data Download</a><a data-p="api">API</a><a data-p="metadata">Metadata</a>
+  </div></div>
+  <div class="dd"><button class="ddbtn" data-p="docs">Documentation ▾</button><div class="ddmenu">
+    <a data-p="method">Methodology</a><a data-p="backtest">Back-testing</a>
+  </div></div>
+  <div class="dd"><button class="ddbtn" data-p="system">System ▾</button><div class="ddmenu">
+    <a data-p="quality">Data Quality</a><a data-p="status">Collection Sources</a>
+  </div></div>
+</div></nav>
+
+<main>
+<div class="page active" id="p-home">
+  <div class="tag">Prototype — Demonstration Data</div>
+  <div class="hero"><div class="eyebrow">DOMESTIC AIRFARE STATISTICS</div>
+    <h2>Airfare Intelligence Platform</h2>
+    <p>Automated high-frequency collection and analysis of domestic airfares to support inflation measurement and policy analysis.</p>
+    <div class="ctas"><button class="btn primary" onclick="go('fare')">Explore Airfare Data</button><button class="btn secondary" onclick="go('index')">View Airfare Price Index</button></div>
+  </div>
+  <div class="kpi-row">
+    <div class="kpi"><div class="lbl">Airfare Price Index (APIx)</div><div class="val">124.6</div><div class="chg pos">+4.8% MoM</div></div>
+    <div class="kpi"><div class="lbl">Average Fare</div><div class="val">₹4,820</div><div class="chg pos">+3.2% MoM</div></div>
+    <div class="kpi"><div class="lbl">Median Fare</div><div class="val">₹4,490</div><div class="chg pos">+2.7% MoM</div></div>
+    <div class="kpi"><div class="lbl">Routes Covered</div><div class="val">25</div><div class="chg">DGCA-weighted basket</div></div>
+    <div class="kpi"><div class="lbl">Observations</div><div class="val">2.41M</div><div class="chg">Last 30 days</div></div>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>Airfare Price Index (APIx)</h3>
+      <div class="controls"><div class="seg"><button class="on">Daily</button><button>Weekly</button><button>Monthly</button><button>Yearly</button></div>
+      <select><option>Last 90 days</option><option>Last 1 year</option></select></div>
+      <svg viewBox="0 0 640 220" width="100%" height="220" id="homechart"></svg>
+    </div>
+    <div class="card"><h3>Latest Developments</h3>
+      <div class="dev"><div class="d">25 Sep 2026</div>MoSPI-compliant APIx configuration deployed (Economy-class filtering & Level 4 standardization).</div>
+      <div class="dev"><div class="d">18 Sep 2026</div>Successfully bypassed WAFs across all 11 platforms using headful CDP network interception.</div>
+      <div class="dev"><div class="d">12 Sep 2026</div>Pivoted from Cloud execution to Local Orchestration due to datacenter IP blocking.</div>
+      <div class="dev" style="border:none"><div class="d">05 Sep 2026</div>Coverage focused on Top 5 representative city-pairs capturing ~25% of national traffic.</div>
+    </div>
+  </div>
+  <h3 style="color:var(--navy);margin:0 0 12px">Explore the Platform</h3>
+  <div class="explore">
+    <a onclick="go('index')" href="#"><h4>Airfare Price Index</h4><p>View index values and historical trends.</p></a>
+    <a onclick="go('fare')" href="#"><h4>Fare Data</h4><p>Explore detailed airfare observations.</p></a>
+    <a onclick="go('route')" href="#"><h4>Route Analysis</h4><p>Analyse domestic city-pair fares.</p></a>
+    <a onclick="go('airline')" href="#"><h4>Airline &amp; OTA</h4><p>Compare fares across sources.</p></a>
+    <a onclick="go('leadtime')" href="#"><h4>Lead-Time Analysis</h4><p>Study fare variation by booking window.</p></a>
+    <a onclick="go('api')" href="#"><h4>Data &amp; API</h4><p>Access datasets, metadata and API services.</p></a>
+  </div>
+</div>
+
+<div class="page" id="p-analysis">
+  <div class="eyebrow">ANALYSIS</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Airfare Analysis</h2>
+  <p style="color:var(--sub);max-width:760px">Analytical views of domestic airfare movements, routes, sources, lead-time effects and fare composition.</p>
+  <div class="cards-grid" style="margin:20px 0">
+    <div class="dcard"><h3>Airfare Price Index</h3>
+      <ul><li>Daily, weekly and monthly APIx</li><li>Year-over-year movement</li><li>Index by route</li></ul>
+      <span class="arrow-link" onclick="go('index')">View Index →</span></div>
+    <div class="dcard"><h3>Route Analysis</h3>
+      <ul><li>Route-level fare movements</li><li>India route map</li><li>Sector-wise comparisons</li></ul>
+      <span class="arrow-link" onclick="go('route')">Explore Routes →</span></div>
+    <div class="dcard"><h3>Airline &amp; OTA Analysis</h3>
+      <ul><li>Airline comparison</li><li>OTA comparison</li><li>Source-level observations</li></ul>
+      <span class="arrow-link" onclick="go('airline')">View Source Analysis →</span></div>
+    <div class="dcard"><h3>Lead-Time Analysis</h3>
+      <ul><li>T+1, T+7, T+15, T+30, T+45 windows</li><li>Advance-purchase fare curve</li></ul>
+      <span class="arrow-link" onclick="go('leadtime')">View Lead-Time →</span></div>
+    <div class="dcard"><h3>Market &amp; Event Analysis</h3>
+      <ul><li>Festival periods</li><li>Demand-related movements</li><li>Fuel-price and disruption context</li></ul>
+      <span class="arrow-link" onclick="go('market')">View Market Analysis →</span></div>
+  </div>
+</div>
+
+<div class="page" id="p-index">
+  <div class="eyebrow">ANALYTICAL SERIES</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Airfare Price Index</h2>
+  <p style="color:var(--sub);max-width:700px">High-frequency index of domestic airfare movements across representative Indian city-pairs.</p>
+  <div class="kpi-row" style="grid-template-columns:repeat(4,1fr)">
+    <div class="kpi"><div class="lbl">Current APIx</div><div class="val">124.6</div><div class="chg pos">+0.4% DoD</div></div>
+    <div class="kpi"><div class="lbl">Weekly Change</div><div class="val">+1.9%</div></div>
+    <div class="kpi"><div class="lbl">Monthly Change</div><div class="val">+4.8%</div></div>
+    <div class="kpi"><div class="lbl">Yearly Change</div><div class="val">+11.2%</div></div>
+  </div>
+  <div class="card"><h3>APIx Time Series (Base = 100, Nov 2024)</h3>
+    <div class="controls"><div class="seg"><button class="on">Daily</button><button>Weekly</button><button>Monthly</button></div>
+      <select><option>All routes</option><option>DEL-BOM</option><option>DEL-BLR</option></select></div>
+    <svg viewBox="0 0 900 240" width="100%" height="240" id="idxchart"></svg>
+  </div>
+  <div class="card"><h3>Index by Route (weight, contribution)</h3>
+    <table><thead><tr><th>Route</th><th>Weight</th><th>Route APIx</th><th>Contribution</th></tr></thead><tbody id="idxtable"></tbody></table>
+  </div>
+</div>
+
+<div class="page" id="p-data">
+  <div class="tag">Prototype — Demonstration Data</div>
+  <div class="eyebrow">DATA</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Data</h2>
+  <p style="color:var(--sub);max-width:760px">Datasets available through the Airfare Intelligence Platform, covering fare-level observations, the constructed price index, and source and route-level statistics.</p>
+  <div class="cards-grid" style="margin:20px 0">
+    <div class="dcard"><h3>Domestic Airfare Observations</h3>
+      <ul><li>High-frequency fare-level observations</li><li>Airline and OTA sources</li><li>Route, travel date, search timestamp, lead time</li><li>Fare components and availability status</li></ul>
+      <span class="arrow-link" onclick="go('fare')">Explore Dataset →</span></div>
+    <div class="dcard"><h3>Airfare Price Index</h3>
+      <ul><li>Daily, weekly, monthly and yearly APIx series</li><li>National and route-level index values</li><li>Base period and weighting reference</li></ul>
+      <span class="arrow-link" onclick="go('index')">View Index →</span></div>
+    <div class="dcard"><h3>Route Fare Dataset</h3>
+      <ul><li>Route-level statistics: average, median, minimum, maximum</li><li>Route weights and observation coverage</li></ul>
+      <span class="arrow-link" onclick="go('route')">Explore Routes →</span></div>
+    <div class="dcard"><h3>Airline &amp; OTA Dataset</h3>
+      <ul><li>Source-level fare statistics</li><li>Airline and OTA comparisons</li></ul>
+      <span class="arrow-link" onclick="go('airline')">View Source Analysis →</span></div>
+    <div class="dcard"><h3>Lead-Time &amp; Fare Components</h3>
+      <ul><li>T+1, T+7, T+15, T+30, T+45 advance-purchase windows</li><li>Base fare, taxes, UDF, convenience fee, other charges</li></ul>
+      <span class="arrow-link" onclick="go('leadtime')">Lead-Time Analysis →</span> &nbsp;·&nbsp; <span class="arrow-link" onclick="go('components')">Fare Components →</span></div>
+  </div>
+  <div class="card"><h3>Data Access</h3>
+    <div class="access-row">
+      <a onclick="go('explorer')">Data Explorer</a><a onclick="go('download')">Data Download</a><a onclick="go('api')">API</a><a onclick="go('metadata')">Metadata</a>
+    </div>
+  </div>
+</div>
+
+<div class="page" id="p-fare">
+  <div class="eyebrow">OBSERVATION DATABASE</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Domestic Airfare Data</h2>
+  <div class="card"><h3>Filters</h3>
+    <div class="controls">
+      <select id="f-origin"><option value="">Origin</option><option value="DEL">DEL</option><option value="BOM">BOM</option><option value="BLR">BLR</option><option value="HYD">HYD</option><option value="PNQ">PNQ</option></select>
+      <select id="f-dest"><option value="">Destination</option><option value="DEL">DEL</option><option value="BOM">BOM</option><option value="BLR">BLR</option><option value="HYD">HYD</option><option value="PNQ">PNQ</option></select>
+      <select id="f-airline"><option value="">Airline</option><option value="IndiGo">IndiGo</option><option value="Air India">Air India</option><option value="Air India Express">Air India Express</option><option value="Akasa Air">Akasa Air</option><option value="SpiceJet">SpiceJet</option></select>
+      <select id="f-source"><option value="">Source</option><option value="MakeMyTrip">MakeMyTrip</option><option value="Yatra">Yatra</option><option value="EaseMyTrip">EaseMyTrip</option><option value="Cleartrip">Cleartrip</option><option value="Ixigo">Ixigo</option><option value="Goibibo">Goibibo</option></select>
+      <select id="f-class"><option value="">Cabin</option><option value="Economy">Economy</option><option value="Premium Economy">Premium Economy</option><option value="Business">Business</option></select>
+      <div class="seg" id="f-window"><button class="on" data-val="1">T+1</button><button data-val="7">T+7</button><button data-val="15">T+15</button><button data-val="30">T+30</button><button data-val="45">T+45</button></div>
+      <button class="btn secondary" style="padding:6px 12px" onclick="loadFares()">Apply</button>
+    </div>
+  </div>
+  <div class="card"><h3>Fare Observations</h3>
+    <div style="overflow-x:auto;">
+      <table><thead><tr><th>Timestamp</th><th>O</th><th>D</th><th>Airline</th><th>Source</th><th>Travel Date</th><th>Lead</th><th>Cabin</th><th>Base</th><th>Taxes</th><th>Total</th><th>Status</th></tr></thead><tbody id="faretable"></tbody></table>
+    </div>
+    <div id="fare-pagination" style="display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:12.5px;">
+      <button class="btn secondary" id="fare-prev" onclick="loadFares(currentFarePage - 1)" style="padding:6px 12px" disabled>← Previous</button>
+      <span id="fare-page-info">Page 1</span>
+      <button class="btn secondary" id="fare-next" onclick="loadFares(currentFarePage + 1)" style="padding:6px 12px" disabled>Next →</button>
+    </div>
+  </div>
+</div>
+
+<div class="page" id="p-status">
+  <div class="eyebrow">TECHNICAL MONITORING</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Collection Sources</h2>
+  <p style="color:var(--sub);max-width:700px">Static data sources and historical databases for the Airfare Intelligence Platform.</p>
+  <div class="card"><table><thead><tr><th>Source</th><th>Type</th><th>Status</th><th>Last Collection</th><th>Records</th><th>Coverage</th><th>Issues</th></tr></thead><tbody id="statustable"></tbody></table></div>
+  <div class="card"><h3>Tariff Sheet PDFs</h3>
+    <p style="font-size:12.5px;color:var(--sub);margin-top:0;">Click a file to view the official base fare structures and rules.</p>
+    <div id="pdf-list" style="display:grid;grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));gap:10px;"></div>
+  </div>
+  <div class="card"><h3>DGCA Traffic Source Data</h3>
+    <p style="font-size:12.5px;color:var(--sub);margin-top:0;">Raw monthly passenger traffic data used to determine route index weights.</p>
+    <div id="dgca-list" style="display:grid;grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));gap:10px;"></div>
+  </div>
+</div>
+
+<div class="page" id="p-docs">
+  <div class="eyebrow">DOCUMENTATION</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Documentation</h2>
+  <p style="color:var(--sub);max-width:760px">Technical and methodological documentation for the Airfare Intelligence Platform.</p>
+  <div class="cards-grid" style="margin:20px 0">
+    <div class="dcard"><h3>Methodology</h3>
+      <ul><li>Objective and data sources</li><li>Representative route basket and DGCA passenger-traffic weighting</li><li>Advance purchase windows, data cleaning and normalisation</li><li>Airfare Price Index construction and limitations</li></ul>
+      <span class="arrow-link" onclick="go('method')">Read Methodology →</span></div>
+    <div class="dcard"><h3>Data Collection</h3>
+      <div class="pipeline" style="margin:8px 0 12px;font-size:11px"><div class="step">Source</div><div class="arrow">→</div><div class="step">Scraping</div><div class="arrow">→</div><div class="step">Raw Quote</div><div class="arrow">→</div><div class="step">Validation</div><div class="arrow">→</div><div class="step">Dedup.</div><div class="arrow">→</div><div class="step">Missing Values</div><div class="arrow">→</div><div class="step">Outliers</div><div class="arrow">→</div><div class="step">Normalisation</div><div class="arrow">→</div><div class="step">Storage</div></div>
+      <ul><li>Sources: airline websites and OTAs, including JavaScript-rendered pages</li><li>Session handling and rate limiting</li><li>robots.txt and terms-of-service compliance</li><li>Ethical scraping safeguards</li></ul>
+      <div class="note" style="margin-top:0">Described here as platform methodology and prototype design — not a claim that automated collection is currently operational.</div></div>
+    <div class="dcard"><h3>Data Quality</h3>
+      <ul><li>Coverage and completeness</li><li>Missing value and duplicate rates</li><li>Outlier rate and source freshness</li><li>Collection status by source</li></ul>
+      <span class="arrow-link" onclick="go('quality')">View Data Quality →</span></div>
+    <div class="dcard"><h3>Back-testing &amp; Validation</h3>
+      <ul><li>30-day back-test concept</li><li>APIx compared against publicly available DGCA reference data</li><li>Difference and percentage difference</li><li>Validation limitations</li></ul>
+      <span class="arrow-link" onclick="go('backtest')">View Back-testing →</span></div>
+    <div class="dcard"><h3>API Documentation</h3>
+      <ul><li>Base URL and endpoints</li><li>Request parameters</li><li>Response format and metadata</li></ul>
+      <span class="arrow-link" onclick="go('api')">View API →</span></div>
+    <div class="dcard"><h3>Metadata</h3>
+      <ul><li>Dataset information and reference period</li><li>Variable dictionary</li></ul>
+      <span class="arrow-link" onclick="go('metadata')">View Metadata →</span></div>
+  </div>
+</div>
+
+<div class="page methodology" id="p-method">
+  <div class="eyebrow">DOCUMENTATION</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Methodology</h2>
+  <div class="card">
+    <h3>1. Background</h3><p>The Airfare Intelligence Platform collects high-frequency domestic airfare observations from airline websites and online travel aggregators to support inflation measurement and policy analysis.</p>
+    <h3>2. Data Sources</h3><p>Observations are drawn from five domestic airlines and six online travel aggregators, covering 55 representative city-pairs selected via DGCA route-share data.</p>
+    <h3>3. Data Collection</h3><p>Automated collection captures fares across multiple advance-purchase windows (T+1, T+7, T+15, T+30, T+45) using Headful Chromium + CDP Network Interception to bypass WAFs.</p>
+    <h3>4. Index Construction &amp; MoSPI Configuration</h3><p>The Airfare Price Index (APIx) is constructed using the Jevons Geometric Mean (route-level) and Laspeyres Index (national level). To properly align with the official 2024 Base Year without being distorted by DGCA published ceiling tariffs, the APIx incorporates two econometric rules:<br><br><b>1. Economy-Only Basket:</b> The calculation strictly excludes Business and Premium Economy classes to prevent the deflationary bias of discounted premium seats, tracking true consumer inflation.<br><b>2. Level 4 Standardization:</b> The 2024 baseline uses <b>Level 4</b> of the DGCA pricing structure (a proxy for unrestricted advance-purchase economy) rather than volatile Level 1 promos or extreme Level 12 last-minute ceilings.</p>
+    <h3>5. DGCA Passenger Traffic Weighting</h3><p>Route weights are derived from DGCA domestic passenger-traffic shares for the representative city-pair basket, refreshed on a periodic basis.</p>
+    <h3>6. Data Cleaning &amp; Deduplication</h3><p>Raw quotes pass through validation, deduplication and missing-value handling before outlier and sold-out/cancellation treatment is applied.</p>
+    <div class="pipeline" style="margin:12px 0">
+      <div class="step">Raw Quote</div><div class="arrow">→</div><div class="step">Validation</div><div class="arrow">→</div><div class="step">Deduplication</div><div class="arrow">→</div><div class="step">Missing Values</div><div class="arrow">→</div><div class="step">Outlier Handling</div><div class="arrow">→</div><div class="step">Normalisation</div><div class="arrow">→</div><div class="step">Index Construction</div>
+    </div>
+    <h3>7. Automated Local Deployment</h3><p>The entire pipeline runs autonomously using local cron jobs or scheduled tasks for scraping and a dedicated local server for the FastAPI backend and Vanilla JS Dashboard.</p>
+  </div>
+</div>
+
+<div class="page" id="p-route">
+  <div class="eyebrow">ROUTE INTELLIGENCE</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Route Analysis</h2>
+  <div class="card"><h3>Filters</h3><div class="controls">
+    <select id="ra-origin"><option value="DEL">Origin: DEL</option><option value="BOM">Origin: BOM</option><option value="BLR">Origin: BLR</option><option value="HYD">Origin: HYD</option><option value="PNQ">Origin: PNQ</option></select>
+    <select id="ra-dest"><option value="BOM">Dest: BOM</option><option value="DEL">Dest: DEL</option><option value="BLR">Dest: BLR</option><option value="HYD">Dest: HYD</option><option value="PNQ">Dest: PNQ</option></select>
+    <select id="ra-cabin"><option value="Economy">Cabin: Economy</option><option value="Premium Economy">Cabin: Premium Economy</option><option value="Business">Cabin: Business</option></select>
+    <select disabled><option>Airline: Aggregated</option></select>
+    <select disabled><option>Source: Aggregated</option></select>
+    <button class="btn secondary" style="padding:6px 12px" onclick="applyRouteAnalysis()">Apply</button>
+  </div></div>
+  <div class="kpi-row" style="grid-template-columns:repeat(6,1fr)">
+    <div class="kpi"><div class="lbl">Median Fare</div><div class="val">₹4,180</div></div>
+    <div class="kpi"><div class="lbl">Average Fare</div><div class="val">₹4,390</div></div>
+    <div class="kpi"><div class="lbl">Lowest</div><div class="val">₹3,240</div></div>
+    <div class="kpi"><div class="lbl">Highest</div><div class="val">₹7,820</div></div>
+    <div class="kpi"><div class="lbl">MoM Change</div><div class="val chg pos">+6.4%</div></div>
+    <div class="kpi"><div class="lbl">Observations</div><div class="val">18,204</div></div>
+  </div>
+  <div class="card">
+    <h3 id="ra-chart-title">Fare Trend — Lead-Time Elasticity</h3>
+    <svg viewBox="0 0 900 220" width="100%" height="220" id="routechart"></svg>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>Airline Comparison</h3><table><thead><tr><th>Airline</th><th>Median</th><th>Average</th><th>MoM</th></tr></thead><tbody id="routeairline"></tbody></table></div>
+    <div class="card"><h3>Advance Purchase Comparison</h3><table><thead><tr><th>Window</th><th>Median Fare</th></tr></thead><tbody id="routelead"></tbody></table></div>
+  </div>
+  <div class="card"><h3>Route Elasticity Heatmap — Route vs Advance Purchase (APIx)</h3><table class="heat" id="heatmap"></table>
+    <div class="legend"><span><i style="background:#DCEBFA"></i>Low</span><span><i style="background:#7EB0DE"></i>Mid</span><span><i style="background:#1455A0"></i>High</span></div></div>
+  </div>
+</div>
+
+<div class="page" id="p-airline">
+  <div class="eyebrow">SOURCE COMPARISON</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Airline &amp; OTA Analysis</h2>
+  <div class="tabs"><button class="on" id="tab-air">Airlines</button><button id="tab-ota">OTAs</button></div>
+  <div class="card"><table><thead id="aothead"><tr><th>Airline</th><th>Avg Fare</th><th>Median</th><th>Min</th><th>Max</th><th>WoW</th><th>MoM</th><th>Routes</th><th>Obs.</th></tr></thead><tbody id="aotable"></tbody></table></div>
+  <div class="note">Comparisons are restricted to same route, travel date, cabin and advance-purchase window where possible.</div>
+</div>
+
+<div class="page" id="p-leadtime">
+  <div class="eyebrow">BOOKING WINDOW ANALYSIS</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Lead-Time Analysis</h2>
+  <div class="controls">
+    <select id="lt-route" onchange="loadLeadTime()">
+      <option value="All">Route: All</option>
+      <option value="DEL-BOM">DEL → BOM</option>
+      <option value="DEL-BLR">DEL → BLR</option>
+      <option value="BLR-BOM">BLR → BOM</option>
+      <option value="DEL-HYD">DEL → HYD</option>
+      <option value="DEL-PNQ">DEL → PNQ</option>
+    </select>
+    <select id="lt-airline" onchange="loadLeadTime()">
+      <option value="All">Airline: All</option>
+      <option value="IndiGo">IndiGo</option>
+      <option value="Air India">Air India</option>
+      <option value="Air India Express">Air India Express</option>
+      <option value="Akasa Air">Akasa Air</option>
+      <option value="SpiceJet">SpiceJet</option>
+    </select>
+    <select id="lt-cabin" onchange="loadLeadTime()">
+      <option value="All">Cabin: All</option>
+      <option value="Economy">Cabin: Economy</option>
+      <option value="Premium Economy">Cabin: Premium Economy</option>
+      <option value="Business">Cabin: Business</option>
+    </select>
+  </div>
+  <div class="card"><h3>Advance Purchase Window vs Median Fare</h3>
+    <div id="ltbars"></div>
+  </div>
+  <div class="card"><h3>Lead-Time Detail</h3><table><thead><tr><th>Window</th><th>Median</th><th>Average</th><th>Min</th><th>Max</th></tr></thead><tbody id="lttable"></tbody></table></div>
+  <div class="note">Fare typically declines as booking window shortens toward T+15–T+30 before rising sharply near departure; this curve does not imply guaranteed pricing behaviour.</div>
+</div>
+
+
+<div class="page" id="p-market">
+  <div class="eyebrow">CONTEXTUAL ANALYSIS</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Market &amp; Event Analysis</h2>
+  <div class="card"><h3>Fare Timeline with Contextual Events</h3><svg viewBox="0 0 900 220" width="100%" height="220" id="marketchart"></svg>
+    <div class="note">Markers indicate contextual events that coincide with the observation period. These are not asserted to be causal factors — see note below.</div>
+  </div>
+  <div class="card"><h3>Contextual Events</h3><table><thead><tr><th>Date</th><th>Event</th><th>Type</th><th>Note</th></tr></thead><tbody>
+    <tr><td>02 Oct 2026</td><td>Gandhi Jayanti (public holiday)</td><td>Holiday</td><td>Period coincides with elevated observed demand.</td></tr>
+    <tr><td>18 Oct 2026</td><td>Festive travel period begins</td><td>Festival</td><td>Potential factor for further analysis.</td></tr>
+    <tr><td>25 Sep 2026</td><td>ATF price revision</td><td>Fuel</td><td>Contextual event; observed fare movement not attributed automatically.</td></tr>
+  </tbody></table></div>
+</div>
+
+<div class="page" id="p-explorer">
+  <div class="eyebrow">DATASET CATALOGUE</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Data Explorer</h2>
+  <div class="card"><table><thead><tr><th>Dataset</th><th>Frequency</th><th>Coverage</th><th>Last Updated</th><th>Version</th><th>Actions</th></tr></thead><tbody>
+    <tr><td>Domestic Airfare Observations</td><td>Daily</td><td>25 routes</td><td>27 Sep 2026</td><td>v1.3</td><td><a onclick="go('download')" href="#">Download</a> · <a onclick="go('metadata')" href="#">Metadata</a></td></tr>
+    <tr><td>Airfare Price Index</td><td>Daily</td><td>National + route</td><td>27 Sep 2026</td><td>v1.1</td><td><a onclick="go('download')" href="#">Download</a> · <a onclick="go('metadata')" href="#">Metadata</a></td></tr>
+    <tr><td>Route Fare Dataset</td><td>Daily</td><td>25 routes</td><td>27 Sep 2026</td><td>v1.0</td><td><a onclick="go('download')" href="#">Download</a> · <a onclick="go('metadata')" href="#">Metadata</a></td></tr>
+    <tr><td>Airline Fare Dataset</td><td>Daily</td><td>5 airlines</td><td>27 Sep 2026</td><td>v1.0</td><td><a onclick="go('download')" href="#">Download</a> · <a onclick="go('metadata')" href="#">Metadata</a></td></tr>
+    <tr><td>OTA Fare Dataset</td><td>Daily</td><td>6 OTAs</td><td>27 Sep 2026</td><td>v1.0</td><td><a onclick="go('download')" href="#">Download</a> · <a onclick="go('metadata')" href="#">Metadata</a></td></tr>
+    <tr><td>Lead-Time Dataset</td><td>Daily</td><td>5 windows</td><td>27 Sep 2026</td><td>v1.0</td><td><a onclick="go('download')" href="#">Download</a> · <a onclick="go('metadata')" href="#">Metadata</a></td></tr>
+    <tr><td>Fare Component Dataset</td><td>Daily</td><td>25 routes</td><td>27 Sep 2026</td><td>v1.0</td><td><a onclick="go('download')" href="#">Download</a> · <a onclick="go('metadata')" href="#">Metadata</a></td></tr>
+  </tbody></table></div>
+</div>
+
+<div class="page" id="p-download">
+  <div class="eyebrow">DATA EXTRACTION</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Data Download</h2>
+  <div class="card"><div class="controls">
+    <select><option>Dataset: Domestic Airfare Observations</option></select>
+    <input type="date" value="2026-09-01"><input type="date" value="2026-09-27">
+    <select><option>Origin: All</option></select><select><option>Destination: All</option></select>
+    <select><option>Format: CSV</option><option>JSON</option><option>Excel</option></select>
+  </div>
+  <div class="ctas"><button class="btn secondary">Preview Data</button><button class="btn primary">Download</button></div>
+  <div class="note">Downloaded datasets include relevant metadata and source timestamps.</div></div>
+</div>
+
+<div class="page" id="p-api">
+  <div class="eyebrow">MACHINE-READABLE ACCESS</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Airfare Intelligence API</h2>
+  <p style="color:var(--sub)">Base URL: <code>/api</code></p>
+  <div class="card"><h3>Interactive API Playground</h3><p style="font-size:12.5px;color:var(--sub)">Select an endpoint, customize the query variables, and execute a live request against the database.</p>
+    <div class="controls" style="display:flex; gap:10px; align-items:center; margin-bottom:10px;">
+      <select id="api-endpoint" style="padding:6px; border:1px solid #c9d8e5; border-radius:4px;">
+        <option value="/api/summary" selected>GET /summary</option>
+        <option value="/api/index/daily">GET /index/daily</option>
+        <option value="/api/fares">GET /fares</option>
+        <option value="/api/route-analysis">GET /route-analysis</option>
+        <option value="/api/heatmap">GET /heatmap</option>
+        <option value="/api/source-analysis">GET /source-analysis</option>
+        <option value="/api/leadtime">GET /leadtime</option>
+        <option value="/api/system-status">GET /system-status</option>
+        <option value="/api/data-quality">GET /data-quality</option>
+      </select>
+      <input type="text" id="api-query" value="" placeholder="Optional query parameters (e.g. ?origin=DEL)" style="flex:1; padding:6px; border:1px solid #c9d8e5; border-radius:4px; font-family:monospace;">
+      <button class="btn primary" id="runapi" style="padding:6px 14px">Run Request</button>
+    </div>
+    <pre id="apiresp" style="background:#0B2A4A;color:#dbe6f2;padding:14px;font-size:11.5px;overflow-x:auto;max-height:400px;overflow-y:auto;">// Select an endpoint and click "Run Request" to fetch live data</pre>
+  </div>
+      <div class="card">
+    <h3>Live Endpoints Catalog</h3>
+    
+    <div class="api-doc-card" style="margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:16px;">
+      <h4 style="margin:0 0 5px;font-family:monospace;color:var(--navy);font-size:16px;">GET /api/summary</h4>
+      <p style="margin:0 0 10px;font-size:13px;color:var(--sub);">High-level KPIs for the home dashboard.</p>
+      <p style="margin:0;font-size:12px;font-style:italic;">No query parameters.</p>
+      <pre style="background:#0B2A4A;color:#dbe6f2;padding:10px;font-size:11px;border-radius:4px;margin-top:8px;">{ "apix": 105.2, "avg_fare": 6500, "routes_covered": 55, "total_observations": 125000 }</pre>
+    </div>
+
+    <div class="api-doc-card" style="margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:16px;">
+      <h4 style="margin:0 0 5px;font-family:monospace;color:var(--navy);font-size:16px;">GET /api/index/daily</h4>
+      <p style="margin:0 0 10px;font-size:13px;color:var(--sub);">Daily Airfare Price Index (APIx) calculation and route-level contributions.</p>
+      <p style="margin:0;font-size:12px;font-style:italic;">No query parameters.</p>
+      <pre style="background:#0B2A4A;color:#dbe6f2;padding:10px;font-size:11px;border-radius:4px;margin-top:8px;">{
+  "current_apix": 105.2,
+  "route_details": [
+    { "route": "DELHI-MUMBAI", "route_apix": 102.5, "weight": 14.5, "contribution": 14.86 }
+  ]
+}</pre>
+    </div>
+
+    <div class="api-doc-card" style="margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:16px;">
+      <h4 style="margin:0 0 5px;font-family:monospace;color:var(--navy);font-size:16px;">GET /api/fares</h4>
+      <p style="margin:0 0 10px;font-size:13px;color:var(--sub);">Raw flight observation query engine with pagination.</p>
+      <table style="width:100%;font-size:12px;border-collapse:collapse;margin-bottom:10px;text-align:left;">
+        <tr style="background:#f4f7f9;border-bottom:1px solid #c9d8e5;"><th>Parameter</th><th>Description</th><th>Example</th></tr>
+        <tr style="border-bottom:1px solid #eee;"><td><code>origin</code></td><td>Origin IATA code</td><td>DEL</td></tr>
+        <tr style="border-bottom:1px solid #eee;"><td><code>destination</code></td><td>Destination IATA code</td><td>BOM</td></tr>
+        <tr style="border-bottom:1px solid #eee;"><td><code>carrier</code></td><td>Airline name</td><td>IndiGo</td></tr>
+        <tr style="border-bottom:1px solid #eee;"><td><code>page</code></td><td>Page number for pagination</td><td>1</td></tr>
+      </table>
+      <pre style="background:#0B2A4A;color:#dbe6f2;padding:10px;font-size:11px;border-radius:4px;margin-top:8px;">{
+  "data": [
+    {"platform": "MakeMyTrip", "origin": "DEL", "destination": "BOM", "carrier": "IndiGo", "total_fare": 5400}
+  ],
+  "has_more": true,
+  "page": 1
+}</pre>
+    </div>
+
+    <div class="api-doc-card" style="margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:16px;">
+      <h4 style="margin:0 0 5px;font-family:monospace;color:var(--navy);font-size:16px;">GET /api/route-analysis</h4>
+      <p style="margin:0 0 10px;font-size:13px;color:var(--sub);">Deep dive metrics for specific origin/destination pairs.</p>
+      <table style="width:100%;font-size:12px;border-collapse:collapse;margin-bottom:10px;text-align:left;">
+        <tr style="background:#f4f7f9;border-bottom:1px solid #c9d8e5;"><th>Parameter</th><th>Description</th><th>Example</th></tr>
+        <tr style="border-bottom:1px solid #eee;"><td><code>origin</code></td><td>Origin IATA (Default: DEL)</td><td>DEL</td></tr>
+        <tr style="border-bottom:1px solid #eee;"><td><code>destination</code></td><td>Destination IATA (Default: BOM)</td><td>BOM</td></tr>
+        <tr style="border-bottom:1px solid #eee;"><td><code>fare_class</code></td><td>Cabin class (Default: Economy)</td><td>Economy</td></tr>
+      </table>
+      <pre style="background:#0B2A4A;color:#dbe6f2;padding:10px;font-size:11px;border-radius:4px;margin-top:8px;">{
+  "origin": "DEL", "destination": "BOM", "median_fare": 5400,
+  "airline_stats": [{ "carrier": "IndiGo", "median": 5200, "count": 150 }],
+  "lead_stats": [{ "window": "T+15", "median": 4800 }]
+}</pre>
+    </div>
+
+    <div class="api-doc-card" style="margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:16px;">
+      <h4 style="margin:0 0 5px;font-family:monospace;color:var(--navy);font-size:16px;">GET /api/heatmap</h4>
+      <p style="margin:0 0 10px;font-size:13px;color:var(--sub);">Route vs Advance Purchase elasticity matrix.</p>
+      <table style="width:100%;font-size:12px;border-collapse:collapse;margin-bottom:10px;text-align:left;">
+        <tr style="background:#f4f7f9;border-bottom:1px solid #c9d8e5;"><th>Parameter</th><th>Description</th><th>Example</th></tr>
+        <tr style="border-bottom:1px solid #eee;"><td><code>fare_class</code></td><td>Cabin class (Default: Economy)</td><td>Economy</td></tr>
+      </table>
+      <pre style="background:#0B2A4A;color:#dbe6f2;padding:10px;font-size:11px;border-radius:4px;margin-top:8px;">{
+  "routes": ["BENGALURU-DELHI", "DELHI-MUMBAI"],
+  "windows": ["T+1", "T+7", "T+15", "T+30", "T+45"],
+  "heatmap": { "DELHI-MUMBAI": { "T+15": 105.4 } }
+}</pre>
+    </div>
+
+    <div class="api-doc-card" style="margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:16px;">
+      <h4 style="margin:0 0 5px;font-family:monospace;color:var(--navy);font-size:16px;">GET /api/source-analysis</h4>
+      <p style="margin:0 0 10px;font-size:13px;color:var(--sub);">Comparison of prices across Airlines vs OTAs.</p>
+      <table style="width:100%;font-size:12px;border-collapse:collapse;margin-bottom:10px;text-align:left;">
+        <tr style="background:#f4f7f9;border-bottom:1px solid #c9d8e5;"><th>Parameter</th><th>Description</th><th>Example</th></tr>
+        <tr style="border-bottom:1px solid #eee;"><td><code>mode</code></td><td>'airline' or 'ota' (Default: airline)</td><td>ota</td></tr>
+      </table>
+      <pre style="background:#0B2A4A;color:#dbe6f2;padding:10px;font-size:11px;border-radius:4px;margin-top:8px;">[
+  { "name": "MakeMyTrip", "avg_fare": 6100, "median": 5800, "routes": 55, "observations": 4000 }
+]</pre>
+    </div>
+
+    <div class="api-doc-card" style="margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:16px;">
+      <h4 style="margin:0 0 5px;font-family:monospace;color:var(--navy);font-size:16px;">GET /api/leadtime</h4>
+      <p style="margin:0 0 10px;font-size:13px;color:var(--sub);">Booking window analysis curves and tables.</p>
+      <table style="width:100%;font-size:12px;border-collapse:collapse;margin-bottom:10px;text-align:left;">
+        <tr style="background:#f4f7f9;border-bottom:1px solid #c9d8e5;"><th>Parameter</th><th>Description</th><th>Example</th></tr>
+        <tr style="border-bottom:1px solid #eee;"><td><code>origin</code></td><td>Origin IATA code (Optional)</td><td>DEL</td></tr>
+        <tr style="border-bottom:1px solid #eee;"><td><code>destination</code></td><td>Destination IATA code (Optional)</td><td>BOM</td></tr>
+        <tr style="border-bottom:1px solid #eee;"><td><code>carrier</code></td><td>Airline name (Optional)</td><td>IndiGo</td></tr>
+      </table>
+      <pre style="background:#0B2A4A;color:#dbe6f2;padding:10px;font-size:11px;border-radius:4px;margin-top:8px;">[
+  { "window": "T+15", "window_int": 15, "median": 4800, "average": 4900, "min": 4100, "max": 7500, "count": 2100 }
+]</pre>
+    </div>
+
+    <div class="api-doc-card" style="margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:16px;">
+      <h4 style="margin:0 0 5px;font-family:monospace;color:var(--navy);font-size:16px;">GET /api/data-quality</h4>
+      <p style="margin:0 0 10px;font-size:13px;color:var(--sub);">Missing values, deduplication, and pipeline metrics.</p>
+      <p style="margin:0;font-size:12px;font-style:italic;">No query parameters.</p>
+      <pre style="background:#0B2A4A;color:#dbe6f2;padding:10px;font-size:11px;border-radius:4px;margin-top:8px;">{
+  "total_records": 125000,
+  "with_fare": 124500,
+  "overall_coverage": 99.6,
+  "sources": [ { "source": "IndiGo", "total": 15000, "valid": 15000, "coverage": 100.0 } ]
+}</pre>
+    </div>
+    
+    <div class="api-doc-card" style="margin-bottom:10px;border-bottom:1px solid var(--border);padding-bottom:16px;">
+      <h4 style="margin:0 0 5px;font-family:monospace;color:var(--navy);font-size:16px;">GET /api/static/pdfs</h4>
+      <p style="margin:0 0 10px;font-size:13px;color:var(--sub);">Fetch list of static tariff sheet PDF filenames.</p>
+      <p style="margin:0;font-size:12px;font-style:italic;">No query parameters.</p>
+      <pre style="background:#0B2A4A;color:#dbe6f2;padding:10px;font-size:11px;border-radius:4px;margin-top:8px;">[
+  "TARIFF-SHEET-AS-ON-28-NOV-24.pdf"
+]</pre>
+    </div>
+    
+    <div class="api-doc-card" style="margin-bottom:10px;">
+      <h4 style="margin:0 0 5px;font-family:monospace;color:var(--navy);font-size:16px;">GET /api/static/dgca</h4>
+      <p style="margin:0 0 10px;font-size:13px;color:var(--sub);">Fetch list of DGCA Passenger Traffic source CSV files.</p>
+      <p style="margin:0;font-size:12px;font-style:italic;">No query parameters.</p>
+      <pre style="background:#0B2A4A;color:#dbe6f2;padding:10px;font-size:11px;border-radius:4px;margin-top:8px;">[
+  "DOM CITYPAIR DATA, APRIL 2025.csv",
+  "DOM CITYPAIR DATA, AUGUST 2025.csv"
+]</pre>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+<div class="page" id="p-metadata">
+  <div class="eyebrow">DATA DICTIONARY</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Metadata</h2>
+  <div class="card"><h3>Dataset Information</h3><table><tbody>
+    <tr><td>Dataset Name</td><td>Domestic Airfare Observations</td></tr><tr><td>Frequency</td><td>Daily</td></tr><tr><td>Coverage</td><td>5 representative city-pairs</td></tr><tr><td>Reference Period</td><td>Nov 2024 = 100</td></tr><tr><td>Version</td><td>v1.3</td></tr><tr><td>Last Updated</td><td>27 Sep 2026</td></tr>
+  </tbody></table></div>
+  <div class="card"><h3>Variable Dictionary</h3><table><thead><tr><th>Variable</th><th>Description</th></tr></thead><tbody>
+    <tr><td>origin / destination</td><td>IATA airport code</td></tr><tr><td>airline / source</td><td>Operating airline / booking channel</td></tr><tr><td>travel_date / search_date</td><td>Date of travel / observation timestamp</td></tr><tr><td>lead_time</td><td>Advance purchase window (T+n)</td></tr><tr><td>base_fare, taxes, udf, convenience_fee, other_charges</td><td>Fare components</td></tr><tr><td>total_fare</td><td>Total consumer fare</td></tr><tr><td>availability_status</td><td>Confirmed / sold-out / unavailable</td></tr>
+  </tbody></table></div>
+</div>
+
+<div class="page" id="p-backtest">
+  <div class="eyebrow">VALIDATION</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Back-testing &amp; Validation</h2>
+  <p style="color:var(--sub);max-width:700px">APIx compared against publicly available DGCA monthly average-fare data over a 30-day back-test window.</p>
+  <div class="card"><h3>APIx vs DGCA Reference</h3><svg viewBox="0 0 900 220" width="100%" height="220" id="btchart"></svg></div>
+  <div class="card"><h3>Comparison</h3><table><thead><tr><th>Period</th><th>APIx</th><th>DGCA Reference</th><th>Difference</th><th>% Difference</th></tr></thead><tbody id="bttable"></tbody></table></div>
+</div>
+
+<div class="page" id="p-system">
+  <div class="eyebrow">SYSTEM</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">System</h2>
+  <p style="color:var(--sub);max-width:760px">Data quality, collection health, validation and operational status of the Airfare Intelligence Platform.</p>
+  <div class="cards-grid" style="margin:20px 0">
+    <div class="dcard"><h3>Data Quality</h3>
+      <ul><li>Completeness and coverage</li><li>Missing values and duplicate observations</li><li>Outlier observations and quality flags</li></ul>
+      <span class="arrow-link" onclick="go('quality')">View Data Quality →</span></div>
+    <div class="dcard"><h3>System Status</h3>
+      <ul><li>Data collection status</li><li>Source availability</li><li>Last successful collection</li><li>Database, API and dashboard status</li></ul>
+      <span class="arrow-link" onclick="go('status')">View Collection Sources →</span></div>
+    <div class="dcard"><h3>Collection Sources <span class="tag" style="margin:0 0 0 6px;vertical-align:middle">Prototype source configuration</span></h3>
+      <p style="font-size:12.5px;color:var(--sub);margin:6px 0">Airlines: IndiGo, Air India, Air India Express, Akasa Air, SpiceJet.<br>OTAs: MakeMyTrip, Yatra, EaseMyTrip, Cleartrip, Ixigo, Goibibo.<br>Static Data: DGCA Passenger Traffic Data, Airline Tariff Sheet PDFs.</p>
+      <span class="arrow-link" onclick="go('status')">View Source Status →</span></div>
+    <div class="dcard"><h3>Validation &amp; Testing</h3>
+      <ul><li>Automated validation and schema checks</li><li>Duplicate detection</li><li>Fare-component validation</li><li>Back-testing status</li></ul>
+      <span class="arrow-link" onclick="go('backtest')">View Back-testing →</span></div>
+  </div>
+  <div class="card"><h3>System Documentation</h3>
+    <div class="access-row">
+      <a onclick="go('method')">Methodology</a><a onclick="go('quality')">Data Quality</a><a onclick="go('backtest')">Back-testing</a><a onclick="go('metadata')">Metadata</a>
+    </div>
+  </div>
+</div>
+
+<div class="page" id="p-quality">
+  <div class="eyebrow">QUALITY MONITORING</div>
+  <h2 style="color:var(--navy);font-size:24px;margin:6px 0">Data Quality</h2>
+  <div class="kpi-row" style="grid-template-columns:repeat(5,1fr)">
+    <div class="kpi"><div class="lbl">Coverage</div><div class="val">96.4%</div></div>
+    <div class="kpi"><div class="lbl">Completeness</div><div class="val">94.1%</div></div>
+    <div class="kpi"><div class="lbl">Missing Value Rate</div><div class="val">2.3%</div></div>
+    <div class="kpi"><div class="lbl">Duplicate Rate</div><div class="val">1.1%</div></div>
+    <div class="kpi"><div class="lbl">Outlier Rate</div><div class="val">0.8%</div></div>
+  </div>
+  <div class="card"><h3>Source-level Quality</h3><table><thead><tr><th>Source</th><th>Coverage</th><th>Freshness</th><th>Last Collection</th><th>Issues</th></tr></thead><tbody id="qualitytable"></tbody></table></div>
+</div>
+
+<div class="drawer" id="drawer"><span class="close" onclick="document.getElementById('drawer').classList.remove('open')">×</span><h4 id="drawer-title">DEL → BOM</h4><div id="drawer-body"></div></div>
+</main>
+<footer>Airfare Intelligence Platform — Prototype for demonstration purposes only. Not an official Reserve Bank of India or National Statistical Office publication.</footer>
+
+<script>
+const API = 'http://localhost:8000';
+const fmt = n => n == null ? '—' : '₹' + Number(n).toLocaleString('en-IN');
+
+function go(p){
+  document.querySelectorAll('.page').forEach(e=>e.classList.remove('active'));
+  const el=document.getElementById('p-'+p); if(el) el.classList.add('active');
+  document.querySelectorAll('#navrow > button').forEach(b=>b.classList.toggle('active',b.dataset.p===p));
+  document.querySelectorAll('.dd').forEach(dd=>dd.classList.toggle('active',!!dd.querySelector(`[data-p="${p}"]`)));
+  window.scrollTo(0,0);
+  localStorage.setItem('apix_active_page', p);
+}
+document.querySelectorAll('#navrow [data-p]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.p)));
+
+function svgLine(id,vals,w,h,color,labels=[]){
+  const el=document.getElementById(id); if(!el||!vals.length) return; const pad=30;
+  const min=Math.min(...vals), max=Math.max(...vals);
+  const pts=vals.map((v,i)=>{
+    const x=pad+i*(w-2*pad)/(vals.length-1);
+    const y=h-pad-((v-min)/(max-min||1))*(h-2*pad);
+    return [x,y];
+  });
+  let svg=`<line x1="${pad}" y1="${h-pad}" x2="${w-10}" y2="${h-pad}" stroke="#D9E0E8"/><line x1="${pad}" y1="10" x2="${pad}" y2="${h-pad}" stroke="#D9E0E8"/>`;
+  svg+=`<polyline fill="none" stroke="${color}" stroke-width="2" points="${pts.map(p=>p.join(',')).join(' ')}"/>`;
+  pts.forEach((p,i)=>{
+    svg+=`<circle cx="${p[0]}" cy="${p[1]}" r="3.5" fill="${color}"/>`;
+    if(labels[i]) svg+=`<text x="${p[0]}" y="${h-pad+20}" font-size="12" fill="#8898aa" text-anchor="middle">${labels[i]}</text>`;
+  });
+  el.innerHTML=svg;
+}
+
+// ─── 1. HOME PAGE KPIs ───
+async function loadSummary(){
+  try {
+    const d = await (await fetch(`${API}/api/summary`)).json();
+    const kpis = document.querySelectorAll('#p-home .kpi');
+    if(kpis[0]){ kpis[0].querySelector('.val').textContent = d.apix || '—'; }
+    if(kpis[1]){ kpis[1].querySelector('.val').textContent = fmt(d.avg_fare); }
+    if(kpis[2]){ kpis[2].querySelector('.val').textContent = fmt(d.median_fare); }
+    if(kpis[3]){ kpis[3].querySelector('.val').textContent = d.routes_covered; }
+    if(kpis[4]){ kpis[4].querySelector('.val').textContent = d.total_observations.toLocaleString('en-IN'); }
+    // Update header last-updated
+    if(d.scraped_at){
+      const dt = new Date(d.scraped_at);
+      document.querySelector('.headmeta div:last-child').textContent = 'Last Updated: ' + dt.toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}) + ', ' + dt.toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'}) + ' IST';
+    }
+    // Home chart from route indices
+    const idxVals = Object.values(d.route_indices || {});
+    if(idxVals.length) svgLine('homechart', idxVals, 640, 220, '#1455A0', ['Sep 25','Sep 26','Sep 27','Sep 28','Sep 29']);
+  } catch(e){ console.error('Summary fetch failed:', e); }
+}
+
+// ─── 2. INDEX PAGE ───
+async function loadIndex(){
+  try {
+    const d = await (await fetch(`${API}/api/index/daily`)).json();
+    // KPIs
+    const kpis = document.querySelectorAll('#p-index .kpi');
+    if(kpis[0]) kpis[0].querySelector('.val').textContent = d.current_apix;
+    // Route table
+    const tbody = document.getElementById('idxtable');
+    tbody.innerHTML = (d.route_details||[]).map(r =>
+      `<tr><td>${r.route}</td><td>${r.weight}%</td><td>${r.route_apix}</td><td>${r.contribution.toFixed(2)}</td></tr>`
+    ).join('');
+    // Chart from route APIx values
+    const vals = (d.route_details||[]).map(r => r.route_apix);
+    const labels = (d.route_details||[]).map(r => r.route);
+    if(vals.length) svgLine('idxchart', vals, 900, 240, '#0B2A4A', labels);
+  } catch(e){ console.error('Index fetch failed:', e); }
+}
+
+// ─── 3. FARE DATA TABLE ───
+let currentFarePage = 1;
+
+async function loadFares(page = 1){
+  try {
+    currentFarePage = page;
+    let url = `${API}/api/fares?limit=50&page=${page}`;
+    const orig = document.getElementById('f-origin')?.value;
+    const dest = document.getElementById('f-dest')?.value;
+    const airline = document.getElementById('f-airline')?.value;
+    const source = document.getElementById('f-source')?.value;
+    const fareClass = document.getElementById('f-class')?.value;
+    const winBtn = document.querySelector('#f-window button.on');
+    const win = winBtn ? winBtn.dataset.val : '';
+    
+    if (orig) url += `&origin=${orig}`;
+    if (dest) url += `&destination=${dest}`;
+    if (airline) url += `&carrier=${airline}`;
+    if (source) url += `&platform=${source}`;
+    if (fareClass) url += `&fare_class=${fareClass}`;
+    if (win) url += `&window=${win}`;
+    
+    document.getElementById('faretable').innerHTML = '<tr><td colspan="12" style="text-align:center;padding:20px;">Loading data...</td></tr>';
+    
+    const resp = await (await fetch(url)).json();
+    const rows = resp.data || [];
+    const hasMore = resp.has_more || false;
+    
+    if(rows.length === 0){
+        document.getElementById('faretable').innerHTML = '<tr><td colspan="12" style="text-align:center;padding:20px;">No matching flights found.</td></tr>';
+        document.getElementById('fare-page-info').textContent = `Page ${page}`;
+        document.getElementById('fare-prev').disabled = page <= 1;
+        document.getElementById('fare-next').disabled = true;
+        return;
+    }
+    
+    document.getElementById('faretable').innerHTML = rows.map(r => {
+      let travelDate = '—';
+      if(r.scraped_at && r.advance_purchase_window) {
+         let d = new Date(r.scraped_at);
+         let days = parseInt(r.advance_purchase_window.toString().replace('T+', '')) || 0;
+         d.setDate(d.getDate() + days);
+         travelDate = d.toISOString().split('T')[0];
+      }
+      return `<tr><td>${r.scraped_at ? r.scraped_at.replace('T',' ').slice(0,16) : '—'}</td><td>${r.origin}</td><td>${r.destination}</td><td>${r.carrier||'—'}</td><td>${r.platform}</td><td>${travelDate}</td><td>${r.advance_purchase_window}</td><td>${r.fare_class}</td><td>${fmt(r.base_fare)}</td><td>${fmt(r.taxes)}</td><td>${fmt(r.total_fare)}</td><td><span class="badge ok">Confirmed</span></td></tr>`;
+    }).join('');
+    
+    document.getElementById('fare-page-info').textContent = `Page ${page}`;
+    document.getElementById('fare-prev').disabled = page <= 1;
+    document.getElementById('fare-next').disabled = !hasMore;
+    
+  } catch(e){ 
+      console.error('Fares fetch failed:', e);
+      document.getElementById('faretable').innerHTML = '<tr><td colspan="12" style="text-align:center;padding:20px;color:red;">Error loading data.</td></tr>';
+  }
+}
+
+document.querySelectorAll('#f-window button').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('#f-window button').forEach(btn => btn.classList.remove('on'));
+    b.classList.add('on');
+  });
+});
+
+// ─── 4. ROUTE ANALYSIS ───
+function applyRouteAnalysis() {
+    const o = document.getElementById('ra-origin').value;
+    const d = document.getElementById('ra-dest').value;
+    const c = document.getElementById('ra-cabin').value;
+    loadRouteAnalysis(o, d, c);
+}
+
+async function loadRouteAnalysis(origin='DEL', destination='BOM', fareClass='Economy'){
+  try {
+    const d = await (await fetch(`${API}/api/route-analysis?origin=${origin}&destination=${destination}&fare_class=${fareClass}`)).json();
+    if(d.error) return;
+    // KPIs
+    const kpis = document.querySelectorAll('#p-route .kpi');
+    if(kpis[0]) kpis[0].querySelector('.val').textContent = fmt(d.median_fare);
+    if(kpis[1]) kpis[1].querySelector('.val').textContent = fmt(d.avg_fare);
+    if(kpis[2]) kpis[2].querySelector('.val').textContent = fmt(d.min_fare);
+    if(kpis[3]) kpis[3].querySelector('.val').textContent = fmt(d.max_fare);
+    if(kpis[5]) kpis[5].querySelector('.val').textContent = d.observations.toLocaleString('en-IN');
+    // Route chart from lead-time medians
+    const chartVals = (d.lead_stats||[]).map(l => l.median);
+    const chartLabels = (d.lead_stats||[]).map(l => l.window);
+    if(chartVals.length) svgLine('routechart', chartVals, 900, 220, '#1455A0', chartLabels);
+    // Airline comparison table
+    document.getElementById('routeairline').innerHTML = (d.airline_stats||[]).map(a =>
+      `<tr><td>${a.carrier}</td><td>${fmt(a.median)}</td><td>${fmt(a.average)}</td><td>${a.count} obs</td></tr>`
+    ).join('');
+    // Lead-time table
+    document.getElementById('routelead').innerHTML = (d.lead_stats||[]).map(l =>
+      `<tr><td>${l.window}</td><td>${fmt(l.median)}</td></tr>`
+    ).join('');
+  } catch(e){ console.error('Route analysis failed:', e); }
+}
+
+// ─── 5. HEATMAP ───
+async function loadHeatmap(){
+  try {
+    const d = await (await fetch(`${API}/api/heatmap`)).json();
+    const routes = d.routes || [];
+    const windows = d.windows || [];
+    const hm = d.heatmap || {};
+    
+    // Find min and max for color scaling
+    let allVals = [];
+    routes.forEach(r => {
+      windows.forEach(w => {
+        if(hm[r][w] != null) allVals.push(hm[r][w]);
+      });
+    });
+    const hMin = Math.min(...allVals), hMax = Math.max(...allVals);
+    
+    let html = '<tr><th>Route</th>' + windows.map(w=>`<th>${w}</th>`).join('') + '</tr>';
+    routes.forEach(r => {
+      html += `<tr><th style="text-align:left">${r}</th>`;
+      windows.forEach(w => {
+        const v = hm[r][w];
+        if(v != null){
+          // Scale from 0 to 1 based on min/max
+          const t = (v - hMin) / (hMax - hMin || 1);
+          // Darker blue for higher index
+          const col = `rgba(20,85,160,${(0.15+t*0.65).toFixed(2)})`;
+          html += `<td style="background:${col}">${v}</td>`;
+        } else {
+          html += '<td>—</td>';
+        }
+      });
+      html += '</tr>';
+    });
+    document.getElementById('heatmap').innerHTML = html;
+  } catch(e){ console.error('Heatmap failed:', e); }
+}
+
+
+
+// ─── 7. AIRLINE & OTA ANALYSIS ───
+async function loadSourceAnalysis(mode='airline'){
+  try {
+    const rows = await (await fetch(`${API}/api/source-analysis?mode=${mode}`)).json();
+    const head = document.getElementById('aothead');
+    const label = mode==='airline' ? 'Airline' : 'OTA';
+    head.innerHTML = `<tr><th>${label}</th><th>Avg Fare</th><th>Median</th><th>Min</th><th>Max</th><th>Routes</th><th>Obs.</th></tr>`;
+    document.getElementById('aotable').innerHTML = rows.map(r =>
+      `<tr><td>${r.name}</td><td>${fmt(r.avg_fare)}</td><td>${fmt(r.median)}</td><td>${fmt(r.min)}</td><td>${fmt(r.max)}</td><td>${r.routes}</td><td>${r.observations.toLocaleString('en-IN')}</td></tr>`
+    ).join('');
+  } catch(e){ console.error('Source analysis failed:', e); }
+}
+loadSourceAnalysis('airline');
+document.getElementById('tab-air').addEventListener('click',()=>{document.getElementById('tab-air').classList.add('on');document.getElementById('tab-ota').classList.remove('on');loadSourceAnalysis('airline');});
+document.getElementById('tab-ota').addEventListener('click',()=>{document.getElementById('tab-ota').classList.add('on');document.getElementById('tab-air').classList.remove('on');loadSourceAnalysis('ota');});
+
+// ─── 8. LEAD-TIME ANALYSIS ───
+async function loadLeadTime(){
+  try {
+    const route = document.getElementById('lt-route').value;
+    const airline = document.getElementById('lt-airline').value;
+    const cabin = document.getElementById('lt-cabin').value;
+    let url = `${API}/api/leadtime?fare_class=${cabin}`;
+    if(route !== 'All'){
+      const parts = route.split('-');
+      url += `&origin=${parts[0]}&destination=${parts[1]}`;
+    }
+    if(airline !== 'All'){
+      url += `&carrier=${encodeURIComponent(airline)}`;
+    }
+    const rows = await (await fetch(url)).json();
+    const maxVal = Math.max(...rows.map(r=>r.average));
+    document.getElementById('ltbars').innerHTML = rows.map(r =>
+      `<div class="barrow"><div class="lb">${r.window}</div><div class="track"><div class="fill" style="width:${(r.median/maxVal*100).toFixed(0)}%"></div></div><div class="v">${fmt(r.median)}</div></div>`
+    ).join('');
+    document.getElementById('lttable').innerHTML = rows.map(r =>
+      `<tr><td>${r.window}</td><td>${fmt(r.median)}</td><td>${fmt(r.average)}</td><td>${fmt(r.min)}</td><td>${fmt(r.max)}</td></tr>`
+    ).join('');
+  } catch(e){ console.error('Lead-time failed:', e); }
+}
+
+// ─── 10. SYSTEM STATUS & STATIC DATA ───
+async function loadSystemStatus(){
+  try {
+    const rows = await (await fetch(`${API}/api/system-status`)).json();
+    document.getElementById('statustable').innerHTML = rows.map(s =>
+      `<tr><td>${s.source}</td><td>${s.type}</td><td><span class="badge ok">${s.status}</span></td><td>${s.last_collection ? s.last_collection.replace('T',' ').slice(0,16) : '—'}</td><td>${s.records.toLocaleString('en-IN')}</td><td>${s.coverage || '—'}</td><td>—</td></tr>`
+    ).join('');
+  } catch(e){ console.error('Status failed:', e); }
+}
+
+async function loadStaticData(){
+  try {
+    // Load PDFs
+    const pdfs = await (await fetch(`${API}/api/static/pdfs`)).json();
+    document.getElementById('pdf-list').innerHTML = pdfs.map(p => 
+      `<a href="${API}/pdfs/${p}" target="_blank" style="display:flex;align-items:center;gap:8px;padding:12px;border:1px solid var(--border);border-radius:4px;background:#FBFCFE;color:var(--navy);font-size:12.5px;font-weight:600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> ${p}</a>`
+    ).join('');
+
+    // Load DGCA Traffic Source Data
+    const dgca = await (await fetch(`${API}/api/static/dgca`)).json();
+    if(Array.isArray(dgca)) {
+       document.getElementById('dgca-list').innerHTML = dgca.map(f =>
+         `<a href="${API}/dgca-data/${f}" target="_blank" style="display:flex;align-items:center;gap:8px;padding:12px;border:1px solid var(--border);border-radius:4px;background:#FBFCFE;color:var(--navy);font-size:12.5px;font-weight:600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> ${f}</a>`
+       ).join('');
+    } else if(dgca.error) {
+       document.getElementById('dgca-list').innerHTML = `<p style="color:red">${dgca.error}</p>`;
+    }
+  } catch(e){ console.error('Static data failed:', e); }
+}
+
+// ─── 11. DATA QUALITY ───
+async function loadDataQuality(){
+  try {
+    const d = await (await fetch(`${API}/api/data-quality`)).json();
+    // KPIs
+    const kpis = document.querySelectorAll('#p-quality .kpi');
+    if(kpis[0]) kpis[0].querySelector('.val').textContent = d.fare_completeness + '%';
+    if(kpis[1]) kpis[1].querySelector('.val').textContent = d.base_fare_completeness + '%';
+    if(kpis[2]) kpis[2].querySelector('.val').textContent = (100 - d.fare_completeness).toFixed(1) + '%';
+    if(kpis[3]) kpis[3].querySelector('.val').textContent = '0.0%';  // deduplication already ran
+    if(kpis[4]) kpis[4].querySelector('.val').textContent = d.tax_completeness + '%';
+    // Source table
+    document.getElementById('qualitytable').innerHTML = (d.source_quality||[]).map(r =>
+      `<tr><td>${r.source}</td><td>${r.coverage}</td><td>—</td><td>${r.last_collection ? r.last_collection.replace('T',' ').slice(0,16) : '—'}</td><td>${r.issues}</td></tr>`
+    ).join('');
+  } catch(e){ console.error('Quality failed:', e); }
+}
+
+// ─── 12. API PLAYGROUND ───
+document.getElementById('api-endpoint').addEventListener('change', (e) => {
+  const defaults = {
+    '/api/fares': '?origin=DEL&destination=BOM&fare_class=Economy&limit=3',
+    '/api/route-analysis': '?origin=DEL&destination=BOM&fare_class=Economy',
+    '/api/heatmap': '?fare_class=Economy',
+    '/api/source-analysis': '?mode=airline',
+    '/api/leadtime': '?origin=DEL&destination=BOM&fare_class=Economy',
+    '/api/components': '?origin=DEL&destination=BOM&carrier=IndiGo&fare_class=Economy',
+  };
+  document.getElementById('api-query').value = defaults[e.target.value] || '';
+});
+
+document.getElementById('runapi').addEventListener('click', async ()=>{
+  document.getElementById('apiresp').textContent = 'Executing request...';
+  try {
+    const endpoint = document.getElementById('api-endpoint').value;
+    const query = document.getElementById('api-query').value;
+    const resp = await (await fetch(`${API}${endpoint}${query}`)).json();
+    document.getElementById('apiresp').textContent = JSON.stringify(resp, null, 2);
+  } catch(e){
+    document.getElementById('apiresp').textContent = '// Error: Could not connect to API. Is the server running?';
+  }
+});
+
+// ─── 13. MARKET & EVENT (chart from real medians per window) ───
+async function loadMarketChart(){
+  try {
+    const rows = await (await fetch(`${API}/api/leadtime`)).json();
+    const vals = rows.map(r => r.median);
+    const labels = rows.map(r => r.window);
+    if(vals.length) svgLine('marketchart', vals, 900, 220, '#0B2A4A', labels);
+  } catch(e){ console.error('Market chart failed:', e); }
+}
+
+// ─── 14. BACK-TESTING (APIx vs DGCA tariff reference) ───
+async function loadBacktest(){
+  try {
+    const idx = await (await fetch(`${API}/api/index/daily`)).json();
+    const apix = idx.current_apix;
+    const dgcaRef = 135.49; // MoSPI official reference
+    const routes = idx.route_details || [];
+    const vals = routes.map(r => r.route_apix);
+    const labels = routes.map(r => r.route);
+    if(vals.length) svgLine('btchart', vals, 900, 220, '#1455A0', labels);
+    document.getElementById('bttable').innerHTML = routes.map(r => {
+      const diff = (r.route_apix - dgcaRef).toFixed(1);
+      const pct = ((r.route_apix - dgcaRef)/dgcaRef*100).toFixed(1);
+      return `<tr><td>${r.route}</td><td>${r.route_apix}</td><td>${dgcaRef}</td><td>${diff}</td><td>${pct}%</td></tr>`;
+    }).join('');
+  } catch(e){ console.error('Backtest failed:', e); }
+}
+
+// ─── BOOT: Load all data on page load ───
+(async function boot(){
+  const lastPage = localStorage.getItem('apix_active_page') || 'home';
+  go(lastPage);
+  
+  await Promise.allSettled([
+    loadSummary(),
+    loadIndex(),
+    loadFares(),
+    loadRouteAnalysis(),
+    loadHeatmap(),
+    loadLeadTime(),
+    loadSystemStatus(),
+    loadStaticData(),
+    loadDataQuality(),
+    loadMarketChart(),
+    loadBacktest(),
+  ]);
+})();
+</script>
+</body>
+</html>

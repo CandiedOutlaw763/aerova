@@ -38,7 +38,7 @@ class Spider(UCSpider):
         options = uc.ChromeOptions()
         # No need for performance logs for DOM parsing, but we can keep it
         options.set_capability('goog:loggingPrefs', {'performance': 'ALL'})
-        driver = uc.Chrome(version_main=152, options=options)
+        driver = uc.Chrome(version_main=153, options=options)
 
         try:
             print(f"[{self.name}] Navigating to Ixigo results: {url}")

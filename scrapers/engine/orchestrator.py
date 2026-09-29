@@ -17,6 +17,8 @@ SPIDERS = [
     "air_india_express",# Air India Express (direct)
 ]
 
+
+
 def load_spider(name):
     module = importlib.import_module(f"spiders.{name}")
     return module.Spider()
@@ -127,6 +129,13 @@ if __name__ == "__main__":
     
     spider_filter = args.spiders.split(',') if args.spiders else None
     
+    if args.target_class.lower() == "all":
+        classes_to_run = ["Economy", "Premium Economy", "Business"]
+    elif "," in args.target_class:
+        classes_to_run = [c.strip() for c in args.target_class.split(",")]
+    else:
+        classes_to_run = [args.target_class]
+    
     if args.full:
         BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         weights_path = os.path.join(BASE_DIR, 'pipeline', 'static_data', 'route_weights.csv')
@@ -150,10 +159,10 @@ if __name__ == "__main__":
                 date_str = target_date.strftime("%d/%m/%Y")
                 
                 print(f"\n======================================")
-                print(f" FULL SCRAPE: {orig_iata}->{dest_iata} | Window: T+{w} | Class: {args.target_class}")
+                print(f" FULL SCRAPE: {orig_iata}->{dest_iata} | Window: T+{w} | Classes: {classes_to_run}")
                 print(f"======================================")
                 
-                run_orchestrator(orig_iata, dest_iata, str(w), [args.target_class], date_str, spider_filter=spider_filter)
+                run_orchestrator(orig_iata, dest_iata, str(w), classes_to_run, date_str, spider_filter=spider_filter)
     else:
         # Default test run
-        run_orchestrator("DEL", "BOM", "15", [args.target_class], "28/09/2026", spider_filter=spider_filter)
+        run_orchestrator("DEL", "BOM", "15", classes_to_run, "28/09/2026", spider_filter=spider_filter)

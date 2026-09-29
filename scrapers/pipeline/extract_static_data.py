@@ -101,36 +101,53 @@ def extract_tariffs():
                     
                     key = f"{route}_{fare_class}"
                     if key not in tariff:
-                        tariff[key] = {'min_avg': 0, 'max_avg': 0, 'origin': origin, 'route': route, 'fare_class': fare_class}
+                        tariff[key] = {'min_prices': [], 'max_prices': [], 'origin': origin, 'route': route, 'fare_class': fare_class}
                     
                     if min_max == 'minimum':
-                        tariff[key]['min_avg'] = avg_price
+                        tariff[key]['min_prices'] = prices
                     else:
-                        tariff[key]['max_avg'] = avg_price
+                        tariff[key]['max_prices'] = prices
                 
     final_data = []
+    target_windows = [1, 7, 15, 30, 45]
     for key, data in tariff.items():
-        if data['min_avg'] > 0 and data['max_avg'] > 0:
-            base_fare = (data['min_avg'] + data['max_avg']) / 2
+        if data['min_prices'] and data['max_prices']:
+            min_p = sorted(data['min_prices'])
+            max_p = sorted(data['max_prices'])
+            l = min(len(min_p), len(max_p))
+            if l == 0: continue
+            
+            indices = {
+                1: 3,
+                7: 3,
+                15: 3,
+                30: 3,
+                45: 3
+            }
             
             origin_city = data['origin']
             udf = UDF_MAP.get(origin_city, UDF_MAP["DEFAULT"])
             fixed_fees = ASF + udf
             gst_rate = 0.05 if data['fare_class'] == "Economy" else 0.12
             
-            total_fare = (base_fare * (1 + gst_rate)) + fixed_fees
-            
-            final_data.append({
-                'ROUTE': data['route'], 
-                'FARE_CLASS': data['fare_class'],
-                'BASE_FARE': base_fare,
-                'TOTAL_FARE': total_fare
-            })
+            for w in target_windows:
+                idx = indices[w]
+                if idx >= l: idx = l - 1
+                base_fare = (min_p[idx] + max_p[idx]) / 2
+                total_fare = (base_fare * (1 + gst_rate)) + fixed_fees
+                
+                final_data.append({
+                    'ROUTE': data['route'], 
+                    'FARE_CLASS': data['fare_class'],
+                    'ADVANCE_PURCHASE_WINDOW': w,
+                    'BASE_FARE': base_fare,
+                    'TOTAL_FARE': total_fare
+                })
             
     df = pd.DataFrame(final_data)
     out_path = os.path.join(OUT_DIR, 'tariff_base_prices.csv')
     df.to_csv(out_path, index=False)
-    print(f"Saved {len(df)} tariffs to {out_path}")
+    print(f"Saved {len(df)} window-specific tariffs to {out_path}")
 
 if __name__ == "__main__":
     extract_weights()
