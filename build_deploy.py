@@ -77,7 +77,9 @@ def build_deployment():
         "version": 2,
         "builds": [
             { "src": "api/index.py", "use": "@vercel/python" },
-            { "src": "index.html", "use": "@vercel/static" }
+            { "src": "index.html", "use": "@vercel/static" },
+            { "src": "favicon.png", "use": "@vercel/static" },
+            { "src": "data/**", "use": "@vercel/static" }
         ],
         "routes": [
             { "src": "/api/(.*)", "dest": "/api/index.py" },
