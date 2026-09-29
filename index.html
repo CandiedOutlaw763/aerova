@@ -668,7 +668,7 @@ footer{border-top:1px solid var(--border);padding:20px;text-align:center;font-si
 <footer>Airfare Intelligence Platform — Prototype for demonstration purposes only. Not an official Reserve Bank of India or National Statistical Office publication.</footer>
 
 <script>
-const API = 'http://localhost:8000';
+const API = (window.location.protocol === 'file:') ? 'http://localhost:8000' : '';
 const fmt = n => n == null ? '—' : '₹' + Number(n).toLocaleString('en-IN');
 
 function go(p){
