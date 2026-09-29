@@ -81,8 +81,8 @@ def build_deployment():
         ],
         "routes": [
             { "src": "/api/(.*)", "dest": "/api/index.py" },
-            { "src": "/dgca-data/(.*)", "dest": "/api/index.py" },
-            { "src": "/pdfs/(.*)", "dest": "/api/index.py" },
+            { "src": "/dgca-data/(.*)", "dest": "/data/dgca-data/$1" },
+            { "src": "/pdfs/(.*)", "dest": "/data/$1" },
             { "src": "/(.*)", "dest": "/index.html" }
         ]
     }

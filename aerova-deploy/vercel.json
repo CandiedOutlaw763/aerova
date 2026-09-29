@@ -17,11 +17,11 @@
     },
     {
       "src": "/dgca-data/(.*)",
-      "dest": "/api/index.py"
+      "dest": "/data/dgca-data/$1"
     },
     {
       "src": "/pdfs/(.*)",
-      "dest": "/api/index.py"
+      "dest": "/data/$1"
     },
     {
       "src": "/(.*)",
