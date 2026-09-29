@@ -32,6 +32,10 @@
       "dest": "/data/$1"
     },
     {
+      "src": "/favicon.png",
+      "dest": "/favicon.png"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }

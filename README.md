@@ -3,9 +3,9 @@
 This repository contains the end-to-end pipeline for calculating the Real-time Airfare Price Index (APIx) for India.
 
 ## 1. Data Sourcing & Traffic Analysis
-The route-wise domestic passenger traffic data is sourced from the Directorate General of Civil Aviation (DGCA). We found that the top **52 routes** account for exactly 50% of the total passenger traffic in India. This project actively monitors the top 5 routes, representing ~25% of all national air traffic.
+The route-wise domestic passenger traffic data is sourced from the Directorate General of Civil Aviation (DGCA). While the top 55 routes account for exactly 50% of the total passenger traffic in India, this project actively monitors the top 5 representative city-pairs to optimize the scraping cycle.
 
-Target Sources include leading OTAs (MakeMyTrip, Yatra, EaseMyTrip, Cleartrip, Ixigo, Goibibo) and direct airlines (IndiGo, Air India, Air India Express, Akasa Air, SpiceJet) across 5 advance-purchase windows: T+1, T+7, T+15, T+30, T+45 days.
+Target Sources include leading OTAs (MakeMyTrip, Yatra, EaseMyTrip, Cleartrip, Ixigo, Goibibo) and direct airlines (IndiGo, Air India, Air India Express, Akasa Air, SpiceJet) across 6 advance-purchase windows (T+1, T+7, T+15, T+30, T+45, T+60 days) and 3 fare classes (Economy, Premium Economy, Business).
 
 ## 2. Scraping Architecture (Headful Orchestration)
 To bypass modern WAFs (Cloudflare, Akamai) without paying for residential proxies, the system utilizes **undetected_chromedriver** paired with **Chrome DevTools Protocol (CDP)**.
@@ -14,7 +14,7 @@ Instead of fragile DOM/HTML parsing, the scraper intercepts the backend JSON XHR
 ## 3. Deployment Architecture
 1. **Local Scraper Daemon**: Due to aggressive datacenter IP censorship (WAFs blocking Cloud/GitHub Actions IP ranges), the orchestrator is run locally. The orchestrator cycles through the target websites and commits the results directly to the SQLite database.
 2. **Vercel Edge API**: A FastAPI backend deployed on Vercel reads the read-only SQLite database and dynamically computes the APIx and elasticity curves.
-3. **Native Plotly Dashboard**: A vanilla HTML/JS Single-Page Application (SPA) consuming the API to display the APIx timeline, heatmaps, and fare components.
+3. **Custom SVG Dashboard**: A zero-dependency vanilla HTML/JS Single-Page Application (SPA) consuming the API to display the APIx timeline, heatmaps, and fare components using highly-performant raw SVG rendering.
 
 ## 4. APIx Construction & The MoSPI Base-Year Configuration
 To construct the Real-Time Airfare Price Index (APIx), we utilize the **Jevons Geometric Mean** to mitigate surge-pricing outliers at the route level, and a **Laspeyres Index** (traffic-weighted) for national aggregation.
@@ -59,11 +59,11 @@ By benchmarking our live dynamic scraped prices against the Level 4 base, our pl
 | PS Requirement | Our Implementation |
 |---|---|
 | *"Automatically web-scrapes airfare data from major Indian airline websites (IndiGo, Air India, Air India Express, Akasa Air, SpiceJet) and leading OTAs"* | ✅ Built 11 production spiders covering all 5 airlines + 6 OTAs (MakeMyTrip, Yatra, EaseMyTrip, Cleartrip, Ixigo, Goibibo). Every spider bypasses Cloudflare/Akamai WAFs using headful Chromium + CDP network interception. |
-| *"Basket of representative city-pairs selected on the basis of DGCA passenger-traffic data"* | ✅ Programmatically analysed all 913 domestic routes from DGCA 2025 traffic CSVs. Selected Top 55 routes constituting 50.25% of total national passenger traffic. |
-| *"Capture fares for multiple advance-purchase windows (T+1, T+7, T+15, T+30, T+45 days)"* | ✅ The orchestrator sweeps every route across all 5 advance-purchase windows per scrape cycle. |
+| *"Basket of representative city-pairs selected on the basis of DGCA passenger-traffic data"* | ✅ Programmatically analysed all 913 domestic routes from DGCA 2025 traffic CSVs. While the top 55 routes constitute 50.25% of traffic, this prototype actively monitors the top 5 representative city-pairs to optimize scrape cycles. |
+| *"Capture fares for multiple advance-purchase windows (T+1, T+7, T+15, T+30, T+45 days)"* | ✅ The orchestrator sweeps every route across all 6 advance-purchase windows (T+1, T+7, T+15, T+30, T+45, T+60) per scrape cycle. |
 | *"Separates base fare from taxes, user-development fee and convenience charges"* | ✅ CDP JSON interception extracts structured `baseFare`, `taxes`, `UDF`, and `convenienceFee` fields directly from backend API payloads — no regex guessing. |
 | *"Computes a Real-time Airfare Price Index (APIx) at daily, weekly and monthly frequencies"* | ✅ Jevons Geometric Mean per route → Laspeyres weighted national index. Computed dynamically via FastAPI. |
-| *"Dashboard must visualise price trends, sector-wise heatmaps, lead-time elasticity curves"* | ✅ Native Plotly.js dashboard with: APIx timeline chart, diverging heatmap (green = discount, red = surge), and interactive T+1→T+45 elasticity curve explorer. |
+| *"Dashboard must visualise price trends, sector-wise heatmaps, lead-time elasticity curves"* | ✅ Ultra-lightweight custom SVG dashboard with: APIx timeline chart, diverging heatmap (green = discount, red = surge), and interactive T+1→T+45 elasticity curve explorer. |
 | *"Provide an API that the NSO and RBI can consume"* | ✅ FastAPI REST endpoints: `/api/index/daily`, `/api/prices`, `/api/routes`, `/api/elasticity?route=X`. Hosted on Vercel — always live, zero spin-down. |
 | *"Demonstrate at least 30 days of back-tested results against publicly available DGCA monthly average-fare data"* | ✅ `backtest_fares.py` validates scraped averages against DGCA Tariff Sheet (Apr 2026). `backtest_cpi.py` validates generated APIx against official MoSPI CPI sub-index 7.1.1. |
 
@@ -83,13 +83,13 @@ By benchmarking our live dynamic scraped prices against the Level 4 base, our pl
 | Data Pipeline | SQLite, Pandas, PyPDF2 (DGCA tariff parsing) |
 | Index Construction | Jevons Geometric Mean, Laspeyres Weighted Index |
 | Backend API | FastAPI (Python), deployed as Vercel Serverless Functions |
-| Frontend Dashboard | Vanilla HTML/CSS/JS, Plotly.js, Glassmorphism UI |
+| Frontend Dashboard | Vanilla HTML/CSS/JS, Zero-dependency SVG Charting, Sleek Modern UI |
 | Automation & CI/CD | GitHub Actions (daily cron), Vercel (auto-deploy on push) |
 
 **Architecture Flow:**
 
 ```
-DGCA Traffic CSVs ──► Route Basket (55 routes, 50%+ traffic)
+DGCA Traffic CSVs ──► Route Basket (Top 5 representative routes)
                                     │
 GitHub Actions (Daily Cron 1AM UTC) │
         │                           │
@@ -111,7 +111,7 @@ GitHub Actions (Daily Cron 1AM UTC) │
                  │
         ┌────────┴────────┐
         ▼                 ▼
-   FastAPI REST      Plotly.js
+   FastAPI REST      Vanilla SVG
    /api/index        Dashboard
    /api/prices       (Heatmap,
    /api/elasticity    Elasticity,
@@ -149,9 +149,10 @@ GitHub Actions (Daily Cron 1AM UTC) │
 | Metric | Value |
 |---|---|
 | Market Coverage | 11 platforms (5 airlines + 6 OTAs) = 100% of major booking channels |
-| Route Coverage | 55 routes = 50.25% of all domestic passengers |
-| Advance Windows | 5 windows (T+1, T+7, T+15, T+30, T+45) per route per day |
-| Data Points per Cycle | ~55 routes × 5 windows × 11 platforms = **3,025 fare quotes/day** |
+| Route Coverage | 5 representative routes for real-time monitoring |
+| Advance Windows | 6 windows (T+1, T+7, T+15, T+30, T+45, T+60) per route per day |
+| Fare Classes | 3 classes (Economy, Premium Economy, Business) per flight |
+| Data Points per Cycle | 5 routes × 6 windows × 11 platforms × 3 classes = **990 fare quotes/day** |
 | Infrastructure Cost | ₹0 (GitHub Actions free tier + Vercel free tier) |
 | Human Intervention Required | None — fully autonomous pipeline |
 

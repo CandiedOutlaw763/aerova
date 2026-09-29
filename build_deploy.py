@@ -85,6 +85,7 @@ def build_deployment():
             { "src": "/api/(.*)", "dest": "/api/index.py" },
             { "src": "/dgca-data/(.*)", "dest": "/data/dgca-data/$1" },
             { "src": "/pdfs/(.*)", "dest": "/data/$1" },
+            { "src": "/favicon.png", "dest": "/favicon.png" },
             { "src": "/(.*)", "dest": "/index.html" }
         ]
     }
