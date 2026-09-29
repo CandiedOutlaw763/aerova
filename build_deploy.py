@@ -18,6 +18,8 @@ def build_deployment():
     
     # 2. Copy Frontend
     shutil.copy2(os.path.join(src_dir, "index.html"), os.path.join(deploy_dir, "index.html"))
+    if os.path.exists(os.path.join(src_dir, "favicon.png")):
+        shutil.copy2(os.path.join(src_dir, "favicon.png"), os.path.join(deploy_dir, "favicon.png"))
     
     # 3. Copy API Backend and update paths
     api_src = os.path.join(src_dir, "api", "index.py")
